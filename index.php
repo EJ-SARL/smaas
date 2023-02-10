@@ -28,7 +28,7 @@
 			<?php
 				require_once('composant/footer.php')
 			?> 
-
+non non
 		</body>
 
 	</html>
