@@ -1,5 +1,5 @@
 
-<form method="POST" action="index.php"  >			
+<form method="POST" action="index.php?demande=connexion"  >			
 	 
 	 <h4 style="color: red;"></h4>
 
@@ -31,7 +31,7 @@
 						
 					</div>
 						
-					<input type="password" class="form-control" name="motpasse" required id="password" placeholder="Votre Mot de passe" autocomplete="off" />
+					<input type="password" class="form-control" name="password" required id="mdp" placeholder="Votre Mot de passe" autocomplete="off" />
 					
 				</div>
 				
@@ -55,13 +55,33 @@
 		
 		</div>
 			 
-        <div class="login-bottom-links">
+        <div class="login-bottom-links" >
 				
-			<a href="https://sms.eliajimmy.net/index.php?op=newuser" class="link">Creer un Compte</a>
+			<a href="index.php?op=newuser" class="link">Creer un Compte</a>
 				
         	<br />
                 
 		</div>
+
+
+		
 			
 	</form>
 			
+	<!--Afficher le mot de passe-->
+	<SCRIPT TYPE="text/javascript">
+						
+		function voirpass()
+			{ 
+				var input = document.getElementById("mdp"); 
+				if (input.type === "password")
+					{ 
+						input.type = "text"; 
+					} 
+				else
+					{ 
+						input.type = "password"; 
+					} 
+			}
+								       
+	</script>
