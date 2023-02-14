@@ -15,6 +15,6 @@
 	<link rel="stylesheet" href="home/assets/css/neon-theme.css">
 	<link rel="stylesheet" href="home/assets/css/neon-forms.css">
 	<link rel="stylesheet" href="home/assets/css/custom.css">
-	<link rel="stylesheet" href="home/assets/css/skins/red.css">
+	<link rel="stylesheet" href="home/assets/css/skins/facebook.css">
 	<script src="home/assets/js/jquery-1.11.3.min.js"></script>
 </head>

@@ -9,12 +9,31 @@
                 if(isSet($_GET['op']))
 				    {
                         //Sous-composant 1 : formulaire de connexion
-					    require_once("composant/content/add_user_form.php");	
+					    require_once("composant/inscription/ihm/demande_creation.php");	
 				    }
-			    else 
+			   
+                 else if (isSet($_GET['demande']))
+                    {
+                       
+                        $demande=$_GET['demande'];
+                        
+                        if($demande=='creation')
+                            {
+                                //Composant1 : recuperer la reponse de la demande
+                                require_once('composant/inscription/api/post.php'); 
+                            }
+                        else if($demande=='connexion')
+                            {
+                                //Composant1 : recuperer la reponse de la demande
+                                require_once('composant/connexion/api/post.php');  
+                            }
+                            
+                    
+                    }
+                else 
 				    {
 					    //Sous-composant 2 : formulaire de connexion
-                        require_once("composant/content/login_form.php");
+                        require_once("composant/connexion/ihm/demande_connexion.php");
 					
                     }
 
