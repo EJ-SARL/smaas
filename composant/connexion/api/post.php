@@ -49,7 +49,7 @@ $payload = json_encode($data);
            // $_SESSION['prenom'] = $prenom;
             //$_SESSION['nom'] = $nom;
 
-            header("home/");            
+            header("Location:/projets/smaas/home/");            
             
         }
     else    
