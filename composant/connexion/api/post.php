@@ -23,9 +23,6 @@ $payload = json_encode($data);
 
     curl_setopt($ch, CURLOPT_URL, $url);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-    //curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-
-	// Set the content type to application/json
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
     
     // Return response instead of outputting
@@ -34,6 +31,7 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
+    echo  $httpCode;
 
     $client=json_decode($result);
     $code =  $client->code;
@@ -59,6 +57,5 @@ $payload = json_encode($data);
             //Intregration de l'IHM affichant la reponse negative
             require_once('composant/connexion/ihm/reponse_negative.php');   
         }
-
 
 ?>
