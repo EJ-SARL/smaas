@@ -1,5 +1,5 @@
 
-<form method="POST" action="index.php?demande=connexion"  >			
+<form method="POST" action="index.php"  >			
 	 
 	 <h4 style="color: red;"></h4>
 

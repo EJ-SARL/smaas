@@ -6,7 +6,7 @@
 	<meta name="description" content="Developpez votre relation client grâce aux Campagnes SMS en RD Congo" />
     <meta name="author" content="" />
 	<link rel="icon" href="home/assets/images/hk.svg">
-	<title>EJ sms</title>
+	<title>SMaaS</title>
 	<link rel="stylesheet" href="home/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
 	<link rel="stylesheet" href="home/assets/css/font-icons/entypo/css/entypo.css">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic">
