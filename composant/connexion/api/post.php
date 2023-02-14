@@ -32,7 +32,7 @@ $payload = json_encode($data);
     curl_close($ch);
 	
     echo  $httpCode;
-    
+
     $client=json_decode($result);
     $code =  $client->code;
     if($code ==200)
@@ -57,6 +57,5 @@ $payload = json_encode($data);
             //Intregration de l'IHM affichant la reponse negative
             require_once('composant/connexion/ihm/reponse_negative.php');   
         }
-
 
 ?>
