@@ -39,15 +39,15 @@ $payload = json_encode($data);
     $code =  $client->code;
     if($code ==200)
         {   
-            session_start();
+            //session_start();
 
             $token =  $client->token;
-            $prenom =  $client->prenom;
-            $nom =  $client->nom;
+           // $prenom =  $client->prenom;
+            //$nom =  $client->nom;
                     
             $_SESSION['token'] = $token;
-            $_SESSION['prenom'] = $prenom;
-            $_SESSION['nom'] = $nom;
+           // $_SESSION['prenom'] = $prenom;
+            //$_SESSION['nom'] = $nom;
 
             header("Location:/projets/smaas/home/");            
             
