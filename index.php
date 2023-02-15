@@ -1,7 +1,20 @@
+<<<<<<< HEAD
 <?php
 	require_once('composant/connexion/api/post.php');
 ?>	
+=======
 
+<<<<<<< HEAD
+>>>>>>> dd1facc (changement)
+
+=======
+<?php
+            
+//Composant1 : recuperer la repognse de la demande
+                                require_once('composant/connexion/api/post.php');  
+                            
+            ?>	
+>>>>>>> fdbf2b0 (fixer)
 <!DOCTYPE html>
 	
 	<html lang="fr">
