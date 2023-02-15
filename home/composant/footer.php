@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="main">
 			
-			&copy; 2015 <strong>Neon</strong> Admin Theme by <a href="http://laborator.co" target="_blank">Laborator</a>
+			&copy; 2023 <strong>SMaaS </strong>Smart Mobilty as a Service in DR Congo  by <a href="http://ejsarl.com" target="_blank">EJ SARL</a>
 		
 		</footer>
 	</div>
