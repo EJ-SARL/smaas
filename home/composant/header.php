@@ -10,8 +10,10 @@
 					<li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
 		
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img src="assets/images/thumb-1@2x.png" alt="" class="img-circle" width="44" />
-							Jimmy ELIA
+							<img src="assets/images/img-1@2x.png" alt="" class="img-circle" width="44" />
+							<?php
+								echo" $prenom $nom";
+							?> 
 						</a>
 		
 		
