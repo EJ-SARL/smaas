@@ -197,7 +197,7 @@
 					
 				
 				<li>
-						<a href="/projets/smaas/">
+						<a href="https://ejsarl.com/smaas/">
 						<i class="entypo-logout right"></i>	Log Out 
 						</a>
 					</li>

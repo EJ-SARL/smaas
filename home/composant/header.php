@@ -37,7 +37,7 @@
 					<li class="sep"></li>
 		
 					<li>
-						<a href="/projets/smaas/">
+						<a href="https://ejsarl.com/smaas/">
 							Log Out <i class="entypo-logout right"></i>
 						</a>
 					</li>
