@@ -65,6 +65,7 @@
 					</ul>
 				</li>
 
+											
 				<li class="has-sub">
 					<a href="forms-main.html">
 						<i class="entypo-users"></i>
@@ -72,30 +73,125 @@
 					</a>
 					<ul>
 						<li>
-							<a href="corp.php?menu=aj">
+							<a href="?page=ajouter_client">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
 						
 						<li>
-							<a href="corp.php?menu=vm">
+							<a href="?page=modifier_clients">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="corp.php?menu=vs">
+							<a href="?page=supprimer_clients">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a href="corp.php?menu=afc">
+							<a  href="?page=recuperer_clients">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
 						
 					</ul>
 				</li>
-				
+
+											
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Itineraire</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_client">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_clients">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_clients">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_clients">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
+											
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Arret</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_client">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_clients">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_clients">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_clients">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
+											
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Titre de transport</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_client">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_clients">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_clients">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_clients">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
               
 				
 					
