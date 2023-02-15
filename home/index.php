@@ -1,8 +1,8 @@
-
 <?php
 	 session_start();
 	 $token=$_SESSION['token'];
-	 //echo  $token;
+	 $prenom=$_SESSION['prenom'];
+	 $nom=$_SESSION['nom'];	
 ?> 
 <!DOCTYPE html>
 <html lang="en">
