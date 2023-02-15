@@ -39,8 +39,6 @@
 							Log Out <i class="entypo-logout right"></i>
 						</a>
 					</li>
-					rien ajouterq
-					oui mon ami
 				</ul>
 		
 			</div>
