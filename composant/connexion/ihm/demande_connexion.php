@@ -1,4 +1,4 @@
-
+<?php echo $messageErreur;?>
 <form method="POST" action="index.php"  >			
 	 
 	 <h4 style="color: red;"></h4>
@@ -13,7 +13,7 @@
 				
 				</div>
 						
-				<input type="text" class="form-control" name="email" id="username" required placeholder="Votre adresse email" autocomplete="off" />
+				<input type="text" class="form-control" name="email" value="<?php echo $email;?>" id="username" required placeholder="Votre adresse email" autocomplete="off" />
 					
 			</div>
 					
