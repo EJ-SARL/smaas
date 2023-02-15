@@ -39,7 +39,7 @@
                 $_SESSION['prenom'] = $prenom;
                 $_SESSION['nom'] = $nom;
 
-                header("Location:/projets/smaas/home/");            
+                header("Location:home/");            
             
             }
         else    
