@@ -1,9 +1,16 @@
 <?php
+if(isset($_SESSION['token']))
+	{
 	 session_start();
 	 $token=$_SESSION['token'];
 	 $prenom=$_SESSION['prenom'];
 	 $nom=$_SESSION['nom'];	
-?> 
+	}
+else	
+	{
+		header("Location:http://localhost/smaas/");
+	}
+?>  
 <!DOCTYPE html>
 <html lang="en">
 
