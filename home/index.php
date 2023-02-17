@@ -8,7 +8,7 @@ if(isset($_SESSION['token']))
 	}
 else	
 	{
-		header("Location:http://localhost/smaas/");
+		header("Location:https://ejsarl.com/smaas/home/");
 	}
 ?>  
 <!DOCTYPE html>
