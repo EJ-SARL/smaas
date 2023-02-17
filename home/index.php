@@ -6,10 +6,7 @@ if(isset($_SESSION['token']))
 	 $prenom=$_SESSION['prenom'];
 	 $nom=$_SESSION['nom'];	
 	}
-else	
-	{
-		header("Location:https://ejsarl.com/smaas/home/");
-	}
+
 ?>  
 <!DOCTYPE html>
 <html lang="en">
