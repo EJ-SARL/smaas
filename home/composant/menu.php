@@ -105,23 +105,23 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_client">
+							<a href="?page=ajouter_itineraire">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
 						
 						<li>
-							<a href="?page=modifier_clients">
+							<a href="?page=modifier_itineraire">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_clients">
+							<a href="?page=supprimer_itineraire">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_clients">
+							<a  href="?page=recuperer_itineraire">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
