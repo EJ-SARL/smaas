@@ -1,5 +1,4 @@
 <?php
-
 	require_once('composant/connexion/api/post.php');
 ?>	
 
