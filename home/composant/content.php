@@ -21,6 +21,14 @@
                      //Composant1 : recuperer la reponse de la demande
                     require_once('composant/client/supprimer/api/delete_user.php'); 
                 }
+
+            //Composant2 : recuperer la reponse de la demande Itineraire
+
+            else if($demande=='ajouter_itineraire')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/itineraire/ajout/api/post.php'); 
+                }
         
         }
     else if (isSet($_GET['page']))
@@ -63,7 +71,14 @@
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/client/recuperer/api/get_user.php'); 
                 }
+
+                 //Composant2 :Ituneraire
            
+            else  if($page=='ajouter_itineraire')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/itineraire/ajout/ihm/demande_creation.php'); 
+                }  
             
         
         }
