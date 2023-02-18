@@ -193,7 +193,11 @@
 					</ul>
 				</li>
               
-				
+				<li>
+					<a href="./composant/tracking/">
+					<i class="entypo-logout right"></i>	Tracking
+					</a>
+				</li>
 					
 				
 				<li>
