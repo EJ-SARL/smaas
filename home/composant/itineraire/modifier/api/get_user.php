@@ -3,7 +3,7 @@
 $id=$_GET['id'];
 
 //URI
-$url = 'http://api.eliajimmy.net/client/'.$id;
+$url = 'http://api.eliajimmy.net/itineraire/'.$id;
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -22,14 +22,12 @@ $ch = curl_init();
 
     if($code ==200)
         {   
-            $prenom=$clients[0]->prenom; 
-            $nom=$clients[0]->nom;
-            $postnom=$clients[0]->postnom;
-            $email=$clients[0]->email;
-            $telephone=$clients[0]->telephone;
+            $prenom=$clients[0]->ligne; 
+            $nom=$clients[0]->itineraire;
+           
             $id=$clients[0]->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/client/modifier/ihm/form_user.php'); 
+            require_once('composant/itineraire/modifier/ihm/form_user.php'); 
         }
 
 

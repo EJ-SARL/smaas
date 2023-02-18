@@ -1,6 +1,6 @@
 <?php
 
-    $url = 'http://api.eliajimmy.net/client/';
+    $url = 'http://api.eliajimmy.net/itineraire/';
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -22,14 +22,14 @@
     if($code ==200)
         {   
              
-            //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/client/modifier/ihm/afficher_users.php'); 
+            //Integration de l'IHM affichant la reponse positive
+            require_once('composant/itineraire/modifier/ihm/afficher_users.php'); 
         }
     else    
         {
             
-            //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/client/modifier/ihm/reponse_negative.php');   
+            //Integration de l'IHM affichant la reponse negative
+            require_once('composant/itineraire/modifier/ihm/reponse_negative.php');   
         }
 
 ?>
