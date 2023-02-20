@@ -73,23 +73,23 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_agent">
+							<a href="?page=ajouter_agents">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
 						
 						<li>
-							<a href="?page=modifier_agent">
+							<a href="?page=modifier_agents">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_agent">
+							<a href="?page=supprimer_agents">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_agent">
+							<a  href="?page=recuperer_agents">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
