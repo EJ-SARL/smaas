@@ -100,7 +100,7 @@
 				<li class="has-sub">
 					<a href="forms-main.html">
 						<i class="entypo-users"></i>
-						<span class="title">Agent</span>
+						<span class="title">Bus</span>
 					</a>
 					<ul>
 						<li>
