@@ -79,24 +79,54 @@
 						</li>
 						
 						<li>
-							<a href="?page=modifier_clients">
+							<a href="?page=modifier_agents">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_clients">
+							<a href="?page=supprimer_agents">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_clients">
+							<a  href="?page=recuperer_agents">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
 						
 					</ul>
 				</li>
-
+                
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Agent</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_bus">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_buss">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_buss">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_buss">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
 											
 				<li class="has-sub">
 					<a href="forms-main.html">
