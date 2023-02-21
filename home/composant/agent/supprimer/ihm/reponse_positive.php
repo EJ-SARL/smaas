@@ -13,7 +13,7 @@
 
 
 <div class="col-md-12">
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de suppression du client est executée avec success.</div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de suppression d'agent est executée avec success.</div>
 </div>
 
 						
