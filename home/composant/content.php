@@ -17,9 +17,23 @@
                 }
             else if($demande=='supprimer_client')
                 {
+
+                    if($demande=='ajouter_agent')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/agent/ajout/api/post.php'); 
+                }
+            else if($demande=='modifier_agent')
+                {
                     
                      //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/supprimer/api/delete_user.php'); 
+                    require_once('composant/agent/modifier/api/put_user.php'); 
+                }
+            else if($demande=='supprimer_agent')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/agent/supprimer/api/delete_user.php'); 
                 }
 
                 if($demande=='ajouter_agent')

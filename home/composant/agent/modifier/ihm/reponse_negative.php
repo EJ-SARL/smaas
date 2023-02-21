@@ -4,7 +4,11 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
+<<<<<<< HEAD
 		<a href="ui-panels.html">Agent</a>
+=======
+		<a href="ui-panels.html">Utilisateur</a>
+>>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -35,7 +39,11 @@
 											
 						</div>
 										
+<<<<<<< HEAD
 						<h2 style="text-align: center;">Modifier un agent </h2>
+=======
+						<h2 style="text-align: center;">Modifier un utilisateur </h2>
+>>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
 		
 					</div>
 							
@@ -89,6 +97,7 @@
 							</div>
 
 							<div class="form-group">		
+<<<<<<< HEAD
 								<label class="col-sm-3 control-label">Role</label>			
 									<div class="col-sm-5">
 										<div class="input-group">
@@ -100,6 +109,8 @@
 							</div>
 
 							<div class="form-group">		
+=======
+>>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
 								<label class="col-sm-3 control-label">Telephone</label>			
 									<div class="col-sm-5">
 										<div class="input-group">

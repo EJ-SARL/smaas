@@ -15,7 +15,7 @@
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $agent= $obj->agents;
+    $agents= $obj->agent;
 
     $code =  $obj->code;
 
