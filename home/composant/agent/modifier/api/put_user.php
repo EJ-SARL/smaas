@@ -1,6 +1,6 @@
 <?php
 $id=$_POST['id'];
-$url = 'http://api.eliajimmy.net/utilisateur/'.$id;
+$url = 'http://api.eliajimmy.net//'.$id;
 
 //Recuperer les variables POST
 $prenom=$_POST['prenom'];
@@ -43,25 +43,25 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
-    $client=json_decode($result);
-    $code =  $client->code;
+    $agents=json_decode($result);
+    $code =  $agents->code;
     if($code ==200)
         {   
-            $prenom =  $client->prenom;
-            $nom =  $client->nom;
-            $postnom =  $client->postnom;
-            $telephone =  $client->telephone;
-            $email =  $client->email;
-            $id =  $client->id;
+            $prenom =  $agents->prenom;
+            $nom =  $agents->nom;
+            $postnom =  $agents->postnom;
+            $telephone =  $agents->telephone;
+            $email =  $agents->email;
+            $id =  $agents->id;
              
             //Intregration de l'IHM affichant la reponse positive
-           require_once('composant/utilisateur/modifier/ihm/reponse_positive.php'); 
+           require_once('composant/agent/modifier/ihm/reponse_positive.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/utilisateur/modifier/ihm/reponse_negative.php');   
+            require_once('composant/agent/modifier/ihm/reponse_negative.php');   
         }
 
 

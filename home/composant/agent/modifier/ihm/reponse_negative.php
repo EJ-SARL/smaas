@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Utilisateur</a>
+		<a href="ui-panels.html">Agent</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -35,7 +35,7 @@
 											
 						</div>
 										
-						<h2 style="text-align: center;">Modifier un utilisateur </h2>
+						<h2 style="text-align: center;">Modifier un agent </h2>
 		
 					</div>
 							
@@ -84,6 +84,17 @@
 											<span class="input-group-addon"><i class="entypo-mail"></i></span>
 											<input type="text" name="email" value=<?php echo $email;?> class="form-control">
 											<span class="input-group-addon"><i class="entypo-mail"></i></span>
+										</div>
+									</div>
+							</div>
+
+							<div class="form-group">		
+								<label class="col-sm-3 control-label">Role</label>			
+									<div class="col-sm-5">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="entypo-user"></i></span>
+											<input type="text" name="role" value=<?php echo $role;?> class="form-control">
+											<span class="input-group-addon"><i class="entypo-user"></i></span>
 										</div>
 									</div>
 							</div>

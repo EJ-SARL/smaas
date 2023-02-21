@@ -15,7 +15,7 @@
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $utilisateur= $obj->utilisateur;
+    $agent= $obj->agents;
 
     $code =  $obj->code;
 
@@ -29,7 +29,7 @@
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/utilisateur/agent/ihm/reponse_negative.php');   
+            require_once('composant/agent/agent/ihm/reponse_negative.php');   
         }
 
 ?>

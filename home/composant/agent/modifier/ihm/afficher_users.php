@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Utilisateur</a>
+		<a href="ui-panels.html">Agent</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>

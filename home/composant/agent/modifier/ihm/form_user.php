@@ -3,7 +3,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Utilisateur</a>
+		<a href="ui-panels.html">Agent</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -28,7 +28,7 @@
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modifier_utilisateur" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modifier_agent" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
@@ -85,6 +85,18 @@
 									<span class="input-group-addon"><i class="entypo-mail"></i></span>
 									<input type="email" name="email"  value=<?php echo $email;?> class="form-control">
 									<span class="input-group-addon"><i class="entypo-mail"></i></span>
+								</div>
+							</div>
+					</div>
+
+
+                    <div class="form-group">		
+						<label class="col-sm-3 control-label">Role</label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="role"  value=<?php echo $role;?> class="form-control">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>

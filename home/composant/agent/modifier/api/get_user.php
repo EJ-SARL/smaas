@@ -3,7 +3,7 @@
 $id=$_GET['id'];
 
 //URI
-$url = 'http://api.eliajimmy.net/utilisateur/'.$id;
+$url = 'http://api.eliajimmy.net/agent/'.$id;
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -16,20 +16,20 @@ $ch = curl_init();
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $utilisateur= $obj->utilisateur;
+    $agents= $obj->agents;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $prenom=$utilisateur[0]->prenom; 
-            $nom=$utilisateur[0]->nom;
-            $postnom=$utilisateur[0]->postnom;
-            $email=$utilisateur[0]->email;
-            $telephone=$utilisateur[0]->telephone;
-            $id=$utilisateur[0]->id;
+            $prenom=$agents[0]->prenom; 
+            $nom=$agents[0]->nom;
+            $postnom=$agents[0]->postnom;
+            $email=$agents[0]->email;
+            $telephone=$agents[0]->telephone;
+            $id=$agents[0]->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/utilisateur/modifier/ihm/form_user.php'); 
+            require_once('composant/agent/modifier/ihm/form_user.php'); 
         }
 
 
