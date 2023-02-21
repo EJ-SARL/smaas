@@ -29,7 +29,20 @@
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/itineraire/ajout/api/post.php'); 
                 }
+
+            else if($demande=='ajouter_bus')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/bus/ajout/api/post.php'); 
+                }
         
+
+            else if($demande=='attribuer_carte')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                  require_once('composant/carte/attribuer/api/put.php');
+                
+                }
         }
     else if (isSet($_GET['page']))
         {
@@ -78,6 +91,18 @@
                 {
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/itineraire/ajout/ihm/demande_creation.php'); 
+                } 
+
+            else  if($page=='ajouter_bus')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/bus/ajout/ihm/demande_creation.php'); 
+                } 
+                
+            else  if($page=='attribuer_carte')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/carte/attribuer/api/get_users.php'); 
                 }  
             
         
