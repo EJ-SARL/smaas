@@ -1,6 +1,6 @@
 <?php
 
-    $url = 'http://api.eliajimmy.net/utilisateur/';
+    $url = 'http://api.eliajimmy.net/agent/';
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
