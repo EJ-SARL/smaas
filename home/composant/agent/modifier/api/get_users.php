@@ -23,13 +23,13 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/utilisateur/modifier/ihm/afficher_users.php'); 
+            require_once('composant/agent/modifier/ihm/afficher_users.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/utilisateur/modifier/ihm/reponse_negative.php');   
+            require_once('composant/utilisateur/agent/ihm/reponse_negative.php');   
         }
 
 ?>
