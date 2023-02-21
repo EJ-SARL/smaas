@@ -73,7 +73,7 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_client">
+							<a href="?page=ajouter_agent">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
