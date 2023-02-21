@@ -51,18 +51,18 @@
 				
 			<?php
 							
-			for($i=0; $i < count($utilisateur); $i++)
+			for($i=0; $i < count($agents); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
 				
-					<td>". $utilisateur[$i]->nom ."</td>
-					<td > " . $utilisateur[$i]->prenom ."</td>
-					<td >". $utilisateur[$i]->postnom."</td>
-					<td >". $utilisateur[$i]->email."</td>
-					<td > ". $utilisateur[$i]->telephone ." </td>
-					<td style='text-align:center;'><a href='?page=modifier_utilisateur&id=". $utilisateur[$i]->id ."'><button type='button' class='btn btn-blue'>Modifier</button></a></td>
+					<td>". $agents[$i]->nom ."</td>
+					<td > " . $agents[$i]->prenom ."</td>
+					<td >". $agents[$i]->postnom."</td>
+					<td >". $agents[$i]->email."</td>
+					<td > ". $agents[$i]->telephone ." </td>
+					<td style='text-align:center;'><a href='?page=modifier_agent&id=". $agents[$i]->id ."'><button type='button' class='btn btn-blue'>Modifier</button></a></td>
 					
 					
 		
