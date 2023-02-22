@@ -15,7 +15,7 @@
 <div class="row">
 
 <div class="col-md-12">
-	<div class="alert alert-danger"><strong>Voulez-vous supprimer le bus ci-dessous ? .</strong> <a href='?page=supprimer_agents'><button type='button' class='btn btn-blue'>NON</button></a> <a href='?demande=supprimer_agent&id=<?php echo $id;?>'><button type='button' class='btn btn-red'>OUI</button></a></div>
+	<div class="alert alert-danger"><strong>Voulez-vous supprimer le bus ci-dessous ? .</strong> <a href='?page=supprimer_bus'><button type='button' class='btn btn-blue'>NON</button></a> <a href='?demande=supprimer_agent&id=<?php echo $id;?>'><button type='button' class='btn btn-red'>OUI</button></a></div>
 </div>
 
 </div>
