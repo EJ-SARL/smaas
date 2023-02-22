@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Agent</a>
+		<a href="ui-panels.html">Bus</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -38,11 +38,9 @@
 				<tr>
 				    <TH></TH>
 					
-					<th>Prenom</th>
-					<th>Nom</th>
-					<th>Postnom</th>
-					<th>Telephone</th>
-					<th >E-mail</th>
+					<th>Matricule</th>
+					<th>Marque</th>
+					<th>Total place</th>
 					<th>Action</th>
 	
 				</tr>
@@ -51,18 +49,16 @@
 				
 			<?php
 							
-			for($i=0; $i < count($agents); $i++)
+			for($i=0; $i < count($buss); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
 				
-					<td>". $agents[$i]->nom ."</td>
-					<td > " . $agents[$i]->prenom ."</td>
-					<td >". $agents[$i]->postnom."</td>
-					<td >". $agents[$i]->email."</td>
-					<td > ". $agents[$i]->telephone ." </td>
-					<td style='text-align:center;'><a href='?page=modifier_agent&id=". $agents[$i]->id ."'><button type='button' class='btn btn-blue'>Modifier</button></a></td>
+					<td>". $buss[$i]->matricule ."</td>
+					<td > " . $buss[$i]->marque ."</td>
+					<td >". $buss[$i]->total_place."</td>
+					<td style='text-align:center;'><a href='?page=modifier_bus&id=". $buss[$i]->id ."'><button type='button' class='btn btn-blue'>Modifier</button></a></td>
 					
 					
 		

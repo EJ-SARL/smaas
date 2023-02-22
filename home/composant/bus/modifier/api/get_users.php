@@ -1,6 +1,6 @@
 <?php
 
-    $url = 'http://api.eliajimmy.net/agent/';
+    $url = 'http://api.eliajimmy.net/bus/';
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -15,7 +15,7 @@
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $agents= $obj->agent;
+    $buss= $obj->bus;
 
     $code =  $obj->code;
 
@@ -23,13 +23,13 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/agent/modifier/ihm/afficher_users.php'); 
+            require_once('composant/bus/modifier/ihm/afficher_users.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/agent/agent/ihm/reponse_negative.php');   
+            require_once('composant/bus/modifier/ihm/reponse_negative.php');   
         }
 
 ?>

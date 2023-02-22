@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="ui-panels.html">Agent</a>
+		<a href="ui-panels.html">Bus</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -23,115 +23,47 @@
 									
 				</div>
 								
-				<h2 style="text-align: center;">Modifier agent </h2>
+				<h2 style="text-align: center;">Modifier bus </h2>
 
 			</div>
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modifier_agent" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modifier_bus" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Prenom</label>
+						<label class="col-sm-3 control-label">Matricule</label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="prenom" value=<?php echo $prenom;?>  class="form-control">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-								</div>
-							</div>
-					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Nom</label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom"   value=<?php echo $nom;?> class="form-control">
+									<input type="text" name="matricule" value=<?php echo $matricule;?>  class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Post-nom</label>			
+						<label class="col-sm-3 control-label">Marque</label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="postnom"  value=<?php echo $postnom;?> class="form-control">
+									<input type="text" name="marque"   value=<?php echo $marque;?> class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Telephone</label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-phone"></i></span>
-									<input type="text" name="telephone" value=<?php echo $telephone;?> id=numero class="form-control">
-									<span style='' id=avnum> </span>
-									<span class="input-group-addon"><i class="entypo-phone"></i></span>
-								</div>
-							</div>
-					</div>
-
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">E-mail</label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-mail"></i></span>
-									<input type="email" name="email"  value=<?php echo $email;?> class="form-control">
-									<span class="input-group-addon"><i class="entypo-mail"></i></span>
-								</div>
-							</div>
-					</div>
-
-
-                    <div class="form-group">		
-						<label class="col-sm-3 control-label">Role</label>			
+						<label class="col-sm-3 control-label">Total place</label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="role"  value=<?php echo $role;?> class="form-control">
+									<input type="text" name="total_place"  value=<?php echo $total_place;?> class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
-					</div>
-
-					<div class="form-group">	
-							<div  >
-                                <span id="msg"></span>
-								</div>	
-						<label class="col-sm-3 control-label">Mot de passe</label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon">**</span>
-									
-									<input type="password" name="password"  id=mdp  class="form-control">
-									<span class="input-group-addon">**</span>
-								</div>
-							</div>
-
-							<div style='text-align:left;'>
-						    	    <input type="checkbox" onclick="voirpass()"> Afficher le mot de passe
-					    	</div>
-					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Confirmer</label>	
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon">**</span>
-									<input type="password" name="confirmPassword" id="confirmerpassword" class="form-control">
-									<span class="input-group-addon">**</span>
-									<div id="cmp"></div>
-								</div>
-							</div>
-							
 					</div>
 
 					<div class="form-group">

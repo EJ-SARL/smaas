@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="ui-panels.html">Agent</a>
+		<a href="ui-panels.html">Bus</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -32,11 +32,9 @@
 					<thead>
 						<tr>
 						 	<th width='15%'>ID</th>
-							<th>Prenom</th>
-							<th>Nom</th>
-							<th>Postnom</th>
-							<th >E-mail</th>
-							<th >Telephone</th>
+							<th>Matricule</th>
+							<th>Marque</th>
+							<th>Total place</th>
 							
 						</tr>
 					</thead>
@@ -45,7 +43,7 @@
 							<?php
 							
 								
-										echo"<tr><td>". $id." </td><td>". $prenom ." </td><td> " . $nom ." </td><td> ". $postnom." </td><td> ". $email." </td><td> ". $telephone." </td><tr>";
+										echo"<tr><td>". $id." </td><td>". $matricule ." </td><td> " . $marque ." </td><td> ". $total_place." </td><tr>";
 								
 							?>
 						</tr>				

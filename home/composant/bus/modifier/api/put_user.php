@@ -1,32 +1,23 @@
 <?php
 $id=$_POST['id'];
 
-$url = 'http://api.eliajimmy.net/agent/'.$id;
+$url = 'http://api.eliajimmy.net/bus/'.$id;
 
 
 //Recuperer les variables POST
-$prenom=$_POST['prenom'];
-$nom=$_POST['nom'];
-$postnom=$_POST['postnom'];
-$email=$_POST['email'];
-$telephone=$_POST['telephone'];
-$password=$_POST['password'];
-$role=$_POST['role'];
-//$password=password_hash($_POST['password'], PASSWORD_DEFAULT);//Utliser password_verify($password, $hash) au niveau de serveur pour la verification
-$mode="formulaire";
+$matricule=$_POST['matricule'];
+$marque=$_POST['marque'];
+$total_place=$_POST['total_place'];
 
 $ch = curl_init();
 
 // Setup request to send json via POST
 $data = array(
     
-    'firstName' => $prenom,
-    'lastName' => $nom,
-    'otherName' => $postnom,
-	'email'=> $email,
-	'telephone'=> $telephone,
-    'mot_de_passe'=> $password,
-    'role'=> $role
+    'matricule' => $matricule,
+    'marque' => $marque,
+    'total_place' => $total_place,
+	
 
 );
 
@@ -46,25 +37,22 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
-    $agents=json_decode($result);
-    $code =  $agents->code;
+    $bus=json_decode($result);
+    $code =  $bus->code;
     if($code ==200)
         {   
-            $prenom =  $agents->prenom;
-            $nom =  $agents->nom;
-            $postnom =  $agents->postnom;
-            $telephone =  $agents->telephone;
-            $email =  $agents->email;
-            $role =  $agents->role;
-              echo"$result";
+            $matricule =  $buss->matricule;
+            $marque =  $buss->marque;
+            $total_place =  $buss->total_place;
+           
                 //Intregration de l'IHM affichant la reponse positive
-                require_once('composant/agent/modifier/ihm/reponse_positive.php'); 
+                require_once('composant/bus/modifier/ihm/reponse_positive.php'); 
             }
         else    
             {
                 
                 //Intregration de l'IHM affichant la reponse negative
-                require_once('composant/agent/modifier/ihm/reponse_negative.php');   
+                require_once('composant/bus/modifier/ihm/reponse_negative.php');   
             }
     
     
