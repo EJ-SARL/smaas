@@ -1,14 +1,8 @@
 <?php
 $id=$_POST['id'];
-<<<<<<< HEAD
-$url = 'http://api.eliajimmy.net/utilisateur/'.$id;
-=======
-<<<<<<< HEAD
-$url = 'http://api.eliajimmy.net//'.$id;
-=======
-$url = 'http://api.eliajimmy.net/utilisateur/'.$id;
->>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
+
+$url = 'http://api.eliajimmy.net/agent/'.$id;
+
 
 //Recuperer les variables POST
 $prenom=$_POST['prenom'];
@@ -17,6 +11,7 @@ $postnom=$_POST['postnom'];
 $email=$_POST['email'];
 $telephone=$_POST['telephone'];
 $password=$_POST['password'];
+$role=$_POST['role'];
 //$password=password_hash($_POST['password'], PASSWORD_DEFAULT);//Utliser password_verify($password, $hash) au niveau de serveur pour la verification
 $mode="formulaire";
 
@@ -30,8 +25,8 @@ $data = array(
     'otherName' => $postnom,
 	'email'=> $email,
 	'telephone'=> $telephone,
-    'password'=> $password,
-    'mode'=> $mode
+    'mot_de_passe'=> $password,
+    'role'=> $role
 
 );
 
@@ -50,10 +45,7 @@ $payload = json_encode($data);
     $result=curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
-	
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
     $agents=json_decode($result);
     $code =  $agents->code;
     if($code ==200)
@@ -63,44 +55,17 @@ $payload = json_encode($data);
             $postnom =  $agents->postnom;
             $telephone =  $agents->telephone;
             $email =  $agents->email;
-            $id =  $agents->id;
-             
-            //Intregration de l'IHM affichant la reponse positive
-           require_once('composant/agent/modifier/ihm/reponse_positive.php'); 
-=======
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
-    $client=json_decode($result);
-    $code =  $client->code;
-    if($code ==200)
-        {   
-            $prenom =  $client->prenom;
-            $nom =  $client->nom;
-            $postnom =  $client->postnom;
-            $telephone =  $client->telephone;
-            $email =  $client->email;
-            $id =  $client->id;
-             
-            //Intregration de l'IHM affichant la reponse positive
-           require_once('composant/utilisateur/modifier/ihm/reponse_positive.php'); 
-<<<<<<< HEAD
-=======
->>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
-        }
-    else    
-        {
-            
-            //Intregration de l'IHM affichant la reponse negative
-<<<<<<< HEAD
-            require_once('composant/utilisateur/modifier/ihm/reponse_negative.php');   
-=======
-<<<<<<< HEAD
-            require_once('composant/agent/modifier/ihm/reponse_negative.php');   
-=======
-            require_once('composant/utilisateur/modifier/ihm/reponse_negative.php');   
->>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
-        }
-
-
+            $role =  $agents->role;
+              echo"$result";
+                //Intregration de l'IHM affichant la reponse positive
+                require_once('composant/agent/modifier/ihm/reponse_positive.php'); 
+            }
+        else    
+            {
+                
+                //Intregration de l'IHM affichant la reponse negative
+                require_once('composant/agent/modifier/ihm/reponse_negative.php');   
+            }
+    
+    
 ?>

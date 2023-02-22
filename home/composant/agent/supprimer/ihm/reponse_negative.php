@@ -7,7 +7,7 @@
 		<a href="ui-panels.html">Agent</a>
 	</li>
 	<li class="active">
-		<strong>Modifier</strong>
+		<strong>Supprimer</strong>
 	</li>
 </ol>
 
