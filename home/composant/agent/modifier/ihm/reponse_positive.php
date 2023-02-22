@@ -4,15 +4,8 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-<<<<<<< HEAD
-		<a href="ui-panels.html">Utilisateur</a>
-=======
-<<<<<<< HEAD
+
 		<a href="ui-panels.html">Agent</a>
-=======
-		<a href="ui-panels.html">Utilisateur</a>
->>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -23,15 +16,8 @@
 <div class="row">
 
 <div class="col-md-12">
-<<<<<<< HEAD
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification d'utilisateur ci-dessous est executée avec success.</div>
-=======
-<<<<<<< HEAD
+
 	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification d'agent ci-dessous est executée avec success.</div>
-=======
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification d'utilisateur ci-dessous est executée avec success.</div>
->>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
 </div>
 
 </div>

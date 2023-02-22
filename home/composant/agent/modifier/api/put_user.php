@@ -1,7 +1,7 @@
 <?php
 $id=$_POST['id'];
 
-$url = 'http://api.eliajimmy.net//'.$id;
+$url = 'http://api.eliajimmy.net/agent/'.$id;
 
 
 //Recuperer les variables POST
@@ -11,6 +11,7 @@ $postnom=$_POST['postnom'];
 $email=$_POST['email'];
 $telephone=$_POST['telephone'];
 $password=$_POST['password'];
+$role=$_POST['role'];
 //$password=password_hash($_POST['password'], PASSWORD_DEFAULT);//Utliser password_verify($password, $hash) au niveau de serveur pour la verification
 $mode="formulaire";
 
@@ -54,8 +55,8 @@ $payload = json_encode($data);
             $postnom =  $agents->postnom;
             $telephone =  $agents->telephone;
             $email =  $agents->email;
-            $id =  $agents->id;
-             
+            $role =  $agents->role;
+              echo"$result";
                 //Intregration de l'IHM affichant la reponse positive
                 require_once('composant/agent/modifier/ihm/reponse_positive.php'); 
             }
