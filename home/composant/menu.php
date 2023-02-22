@@ -73,7 +73,7 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_agents">
+							<a href="?page=ajouter_agent">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
@@ -96,7 +96,6 @@
 						
 					</ul>
 				</li>
-
 											
 				<li class="has-sub">
 					<a href="forms-main.html">

@@ -1,6 +1,14 @@
 <?php
 $id=$_POST['id'];
+<<<<<<< HEAD
 $url = 'http://api.eliajimmy.net/utilisateur/'.$id;
+=======
+<<<<<<< HEAD
+$url = 'http://api.eliajimmy.net//'.$id;
+=======
+$url = 'http://api.eliajimmy.net/utilisateur/'.$id;
+>>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
+>>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
 
 //Recuperer les variables POST
 $prenom=$_POST['prenom'];
@@ -43,6 +51,24 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    $agents=json_decode($result);
+    $code =  $agents->code;
+    if($code ==200)
+        {   
+            $prenom =  $agents->prenom;
+            $nom =  $agents->nom;
+            $postnom =  $agents->postnom;
+            $telephone =  $agents->telephone;
+            $email =  $agents->email;
+            $id =  $agents->id;
+             
+            //Intregration de l'IHM affichant la reponse positive
+           require_once('composant/agent/modifier/ihm/reponse_positive.php'); 
+=======
+>>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
     $client=json_decode($result);
     $code =  $client->code;
     if($code ==200)
@@ -56,12 +82,24 @@ $payload = json_encode($data);
              
             //Intregration de l'IHM affichant la reponse positive
            require_once('composant/utilisateur/modifier/ihm/reponse_positive.php'); 
+<<<<<<< HEAD
+=======
+>>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
+>>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
+<<<<<<< HEAD
             require_once('composant/utilisateur/modifier/ihm/reponse_negative.php');   
+=======
+<<<<<<< HEAD
+            require_once('composant/agent/modifier/ihm/reponse_negative.php');   
+=======
+            require_once('composant/utilisateur/modifier/ihm/reponse_negative.php');   
+>>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
+>>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
         }
 
 
