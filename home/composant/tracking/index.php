@@ -14,7 +14,7 @@
     <div id="map"></div>
 
 
-    <script async
+    <script async>
    
 </script>
   </body>
