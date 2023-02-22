@@ -4,28 +4,19 @@
 $url = 'http://api.eliajimmy.net/bus/';
 
 //Recuperer les variables POST
-$prenom=$_POST['prenom'];
-$nom=$_POST['nom'];
-$postnom=$_POST['postnom'];
-$email=$_POST['email'];
-$telephone=$_POST['telephone'];
-$role=$_POST['role'];
-
-$password2=password_hash($_POST['password'], PASSWORD_DEFAULT);//Utliser password_verify($password, $hash) au niveau de serveur pour la verification
-$mode="formulaire";
+$matricule=$_POST['matricule'];
+$marque=$_POST['marque'];
+$total_place=$_POST['total_place'];
 
 $ch = curl_init();
 
 // Setup request to send json via POST
 $data = array(
     
-    'firstName' => $prenom,
-    'lastName' => $nom,
-    'otherName' => $postnom,
-    'telephone'=> $telephone,
-	'email'=> $email,
-	'password'=> $password2,
-    'role'=> $role
+    'matricule' => $matricule,
+    'marque' => $marque,
+    'total_place' => $total_place,
+   
     
     
 
@@ -47,20 +38,18 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
-    $agent=json_decode($result);
-    $code =  $agent->code;
+    $bus=json_decode($result);
+    $code =  $bus->code;
     if($code ==201)
         {   
-            $prenom =  $agent->prenom;
-            $nom =  $agent->nom;
-            $postnom =  $agent->postnom;
-            $telephone =  $agent->telephone;
-            $email =  $agent->email;
-            //$password=  $agent->password;
-            $role =  $agent->role;
-            $id =  $agent->id;
+            $matricule =  $bus->matricule;
+            $marque =  $bus->marque;
+            $total_place =  $bus->total_place;
+            $id =  $bus->id;
+
+            echo"$result";
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/agent/ajout/ihm/reponse_positive.php'); 
+            require_once('composant/bus/ajout/ihm/reponse_positive.php'); 
         }
     else    
         {

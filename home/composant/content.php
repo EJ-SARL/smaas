@@ -39,42 +39,24 @@
                     require_once('composant/agent/supprimer/api/delete_user.php'); 
                 }
 
-            else if($demande=='ajouter_agent')
-                {
-                    //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/agent/ajout/api/post.php'); 
-                }
-            else if($demande=='modifier_agent')
-                {
-                    
-                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/agent/modifier/api/put_user.php'); 
-                }
-            else if($demande=='supprimer_agent')
-                {
-                    
-                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/agent/supprimer/api/delete_user.php'); 
-                }
-
-
             else if($demande=='ajouter_bus')
                 {
-                    //Composant3 : recuperer la reponse de la demande
+                    //Composant2 : recuperer la reponse de la demande
                     require_once('composant/bus/ajout/api/post.php'); 
                 }
             else if($demande=='modifier_bus')
                 {
                     
-                     //Composant13: recuperer la reponse de la demande
+                     //Composant2 : recuperer la reponse de la demande
                     require_once('composant/bus/modifier/api/put_user.php'); 
                 }
             else if($demande=='supprimer_bus')
                 {
                     
-                     //Composant3 : recuperer la reponse de la demande
-                    require_once('composant/agent/supprimer/api/delete_user.php'); 
+                     //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/bus/supprimer/api/delete_user.php'); 
                 }
+
 
 
             //Composant4 : recuperer la reponse de la demande Itineraire
