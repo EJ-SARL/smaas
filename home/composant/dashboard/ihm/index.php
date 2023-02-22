@@ -67,9 +67,8 @@
 		
 						<div class="panel-options">
 							<ul class="nav nav-tabs">
-								<li class=""><a href="#area-chart" data-toggle="tab">Area Chart</a></li>
-								<li class="active"><a href="#line-chart" data-toggle="tab">Traking Bus</a></li>
-								<li class=""><a href="#pie-chart" data-toggle="tab">Google Map</a></li>
+								<li class=""><a href="#area-chart" data-toggle="tab">Traking Bus</a></li>
+														
 							</ul>
 						</div>
 					</div>
@@ -84,7 +83,7 @@
                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
                             <td></td>
                             <td></td>
-                            <td><img src="assets/images/led.png" alt="" class="img-circle" width="22" /></td>
+                            <td><img src="assets/images/led.gif" alt="" class="img-circle" width="22" /></td>
                             <td></td>
                             <td></td>
                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
@@ -188,7 +187,7 @@
                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
                              <td></td>  
                              <td></td>  
-                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
+                             <td ><img src="assets/images/led.gif" alt="" class="img-circle" width="22" /></td>
                              <td></td>  
                              <td></td> 
                              <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td> 
@@ -282,7 +281,7 @@
                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
                              <td></td>  
                              <td></td>  
-                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
+                             <td ><img src="assets/images/led.gif" alt="" class="img-circle" width="22" /></td>
                              <td></td>  
                              <td></td> 
                              <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td> 
@@ -385,7 +384,7 @@
                              <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
                              <td></td> 
                             <td></td>
-                            <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
+                            <td ><img src="assets/images/led.gif" alt="" class="img-circle" width="22" /></td>
                             <td></td>  
                             <td></td>  
                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
@@ -461,7 +460,7 @@
                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
                             <td></td>
                             <td></td>
-                            <td><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
+                            <td><img src="assets/images/led.gif" alt="" class="img-circle" width="22" /></td>
                             <td></td>
                             <td></td>
                             <td ><img src="assets/images/led2.png" alt="" class="img-circle" width="22" /></td>
@@ -590,49 +589,49 @@
 						<i class="entypo-list"></i>
 		
 						<a href="#">
-							Tasks
-							<span>To do list, tick one.</span>
+							Bus
+							<span>Localiser un bus</span>
 						</a>
 					</div>
 		
 					<div class="tile-content">
 		
-						<input type="text" class="form-control" placeholder="Add Task" />
+						<input type="text" class="form-control" placeholder="Trouver un bus" />
 		
 		
 						<ul class="todo-list">
 							<li>
 								<div class="checkbox checkbox-replace color-white">
 									<input type="checkbox" />
-									<label>Website Design</label>
+									<label>Ligne L01</label>
 								</div>
 							</li>
 		
 							<li>
 								<div class="checkbox checkbox-replace color-white">
 									<input type="checkbox" id="task-2" checked />
-									<label>Slicing</label>
+									<label>Ligne L02</label>
 								</div>
 							</li>
 		
 							<li>
 								<div class="checkbox checkbox-replace color-white">
 									<input type="checkbox" id="task-3" />
-									<label>WordPress Integration</label>
+									<label>Ligne L03</label>
 								</div>
 							</li>
 		
 							<li>
 								<div class="checkbox checkbox-replace color-white">
 									<input type="checkbox" id="task-4" />
-									<label>SEO Optimize</label>
+									<label>Ligne L04</label>
 								</div>
 							</li>
 		
 							<li>
 								<div class="checkbox checkbox-replace color-white">
 									<input type="checkbox" id="task-5" checked="" />
-									<label>Minify &amp; Compress</label>
+									<label>Ligne L05</label>
 								</div>
 							</li>
 						</ul>
@@ -640,7 +639,7 @@
 					</div>
 		
 					<div class="tile-footer">
-						<a href="#">View all tasks</a>
+						<a href="#">Voir toutes lignes</a>
 					</div>
 		
 				</div>
@@ -666,29 +665,29 @@
 		
 					<div class="tile-left">
 						<div class="tile-entry">
-							<h3>Map</h3>
-							<span>top visitors location</span>
+							<h3>.</h3>
+							<span>.</span>
 						</div>
 		
 						<div class="tile-entry">
 							<img src="assets/images/sample-al.png" alt="" class="pull-right op" />
 		
-							<h4>Albania</h4>
-							<span>25%</span>
+							<h4>.</h4>
+							<span>.</span>
 						</div>
 		
 						<div class="tile-entry">
 							<img src="assets/images/sample-it.png" alt="" class="pull-right op" />
 		
-							<h4>Italy</h4>
-							<span>18%</span>
+							<h4>.</h4>
+							<span>.</span>
 						</div>
 		
 						<div class="tile-entry">
 							<img src="assets/images/sample-au.png" alt="" class="pull-right op" />
 		
-							<h4>Austria</h4>
-							<span>15%</span>
+							<h4>.</h4>
+							<span>.</span>
 						</div>
 					</div>
 		

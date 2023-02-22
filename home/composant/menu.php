@@ -33,7 +33,7 @@
 			<ul id="main-menu" class="main-menu">
 			
 			<li class="active opened active ">
-					<a href="index.html">
+					<a href="?home">
 						<i class="entypo-gauge"></i>
 						<span class="title">Centre de contrôle</span>
 					</a>
@@ -176,23 +176,7 @@
 								<span class="title">Attribuer</span>
 							</a>
 						</li>
-						
-						<li>
-							<a href="?page=modifier_itineraire">
-								<span class="title">Modifier</span>
-							</a>
-						</li>
-						<li>
-							<a href="?page=supprimer_itineraire">
-								<span class="title">Supprimer</span>
-							</a>
-						</li>
-						<li>
-							<a  href="?page=recuperer_itineraire">
-								<span class="title">Recuperer</span>
-							</a>
-						</li>
-						
+												
 					</ul>
 				</li>
 

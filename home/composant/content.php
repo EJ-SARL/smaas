@@ -13,12 +13,12 @@
                 {
                     
                      //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/modifier/api/get_users.php'); 
+                    require_once('composant/client/modifier/api/put_user.php'); 
                 }
             else if($demande=='supprimer_client')
                 {
                     
-                    require_once('composant/client/supprimer/api/get_users.php'); 
+                    require_once('composant/client/supprimer/api/delete_user.php'); 
                 }
 
             else if($demande=='ajouter_agent')

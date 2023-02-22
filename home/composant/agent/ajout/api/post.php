@@ -10,8 +10,9 @@ $postnom=$_POST['postnom'];
 $email=$_POST['email'];
 $telephone=$_POST['telephone'];
 $role=$_POST['role'];
+$password=$_POST['password'];
 
-$password2=password_hash($_POST['password'], PASSWORD_DEFAULT);//Utliser password_verify($password, $hash) au niveau de serveur pour la verification
+//$password2=password_hash($_POST['password'], PASSWORD_DEFAULT);//Utliser password_verify($password, $hash) au niveau de serveur pour la verification
 $mode="formulaire";
 
 $ch = curl_init();
@@ -24,7 +25,7 @@ $data = array(
     'otherName' => $postnom,
     'telephone'=> $telephone,
 	'email'=> $email,
-	'password'=> $password2,
+	'password'=> $password,
     'role'=> $role
     
     
