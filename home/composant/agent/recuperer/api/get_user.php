@@ -16,19 +16,19 @@ $ch = curl_init();
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $agents= $obj->agent;
+    $agent= $obj->agent;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $prenom=$agents[0]->prenom; 
-            $nom=$agents[0]->nom;
-            $postnom=$agents[0]->postnom;
-            $email=$agents[0]->email;
-            $telephone=$agents[0]->telephone;
-            $role=$agents[0]->role;
-            $id=$agents[0]->id;
+            $prenom=$agent[0]->prenom; 
+            $nom=$agent[0]->nom;
+            $postnom=$agent[0]->postnom;
+            $email=$agent[0]->email;
+            $telephone=$agent[0]->telephone;
+            $role=$agent[0]->role;
+            $id=$agent[0]->id;
             //Intregration de l'IHM affichant la reponse positive
             require_once('composant/agent/recuperer/ihm/afficher_user.php'); 
         }
