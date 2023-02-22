@@ -1,7 +1,7 @@
 
 <?php
 //URI
-$url = 'http://api.eliajimmy.net/agent/';
+$url = 'http://api.eliajimmy.net/bus/';
 
 //Recuperer les variables POST
 $prenom=$_POST['prenom'];
