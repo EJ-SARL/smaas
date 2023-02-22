@@ -146,17 +146,17 @@
 						</li>
 						
 						<li>
-							<a href="?page=modifier_itineraire">
+							<a href="?page=modifier_buss">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_itineraire">
+							<a href="?page=supprimer_buss">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_itineraire">
+							<a  href="?page=recuperer_buss">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
