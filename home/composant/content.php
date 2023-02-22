@@ -13,12 +13,12 @@
                 {
                     
                      //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/modifier/api/put_user.php'); 
+                    require_once('composant/client/modifier/api/put.php'); 
                 }
             else if($demande=='supprimer_client')
                 {
                     
-                    require_once('composant/client/supprimer/api/delete_user.php'); 
+                    require_once('composant/client/supprimer/api/delete.php'); 
                 }
 
             else if($demande=='ajouter_agent')
@@ -30,13 +30,13 @@
                 {
                     
                      //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/agent/modifier/api/put_user.php'); 
+                    require_once('composant/agent/modifier/api/put.php'); 
                 }
             else if($demande=='supprimer_agent')
                 {
                     
                      //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/agent/supprimer/api/delete_user.php'); 
+                    require_once('composant/agent/supprimer/api/delete.php'); 
                 }
 
             else if($demande=='ajouter_bus')
@@ -48,14 +48,16 @@
                 {
                     
                      //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/bus/modifier/api/put_user.php'); 
+                    require_once('composant/bus/modifier/api/put.php'); 
                 }
             else if($demande=='supprimer_bus')
                 {
                     
                      //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/bus/supprimer/api/delete_user.php'); 
+                    require_once('composant/bus/supprimer/api/delete.php'); 
                 }
+
+       
 
 
 
@@ -93,33 +95,33 @@
             else  if($page=='modifier_clients')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/modifier/api/get_users.php'); 
+                    require_once('composant/client/modifier/api/get_services.php'); 
                 }
             else  if($page=='modifier_client')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/modifier/api/get_user.php'); 
+                    require_once('composant/client/modifier/api/get_service.php'); 
                 }
             else  if($page=='supprimer_clients')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/supprimer/api/get_users.php'); 
+                    require_once('composant/client/supprimer/api/get_services.php'); 
                 }
             else  if($page=='supprimer_client')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/supprimer/api/get_user.php'); 
+                    require_once('composant/client/supprimer/api/get_service.php'); 
                 }
 
             else  if($page=='recuperer_clients')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/recuperer/api/get_users.php'); 
+                    require_once('composant/client/recuperer/api/get_services.php'); 
                 }
             else  if($page=='recuperer_client')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/client/recuperer/api/get_user.php'); 
+                    require_once('composant/client/recuperer/api/get_service.php'); 
                 }
 
 
@@ -131,35 +133,38 @@
             else  if($page=='modifier_agents')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/agent/modifier/api/get_users.php'); 
+                    require_once('composant/agent/modifier/api/get_services.php'); 
                 }
-            else  if($page=='modifier_agent')
+
+             else  if($page=='modifier_agent')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/agent/modifier/api/get_user.php'); 
+                    require_once('composant/agent/modifier/api/get_service.php'); 
                 }
+      
             else  if($page=='supprimer_agents')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/agent/supprimer/api/get_users.php'); 
-                }
-            else  if($page=='supprimer_agent')
-                {
-                    //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/agent/supprimer/api/get_user.php'); 
+                    require_once('composant/agent/supprimer/api/get_services.php'); 
                 }
 
+            else  if($page=='supprimer_agent')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/agent/supprimer/api/get_service.php'); 
+                }
+           
             else  if($page=='recuperer_agents')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/agent/recuperer/api/get_users.php'); 
+                    require_once('composant/agent/recuperer/api/get_services.php'); 
                 }
+            
             else  if($page=='recuperer_agent')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/agent/recuperer/api/get_user.php'); 
+                    require_once('composant/agent/recuperer/api/get_service.php'); 
                 }
-
 
             else if($page=='ajouter_bus')
                 {
@@ -169,33 +174,37 @@
             else  if($page=='modifier_buss')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/bus/modifier/api/get_users.php'); 
+                    require_once('composant/bus/modifier/api/get_services.php'); 
                 }
+
             else  if($page=='modifier_bus')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/bus/modifier/api/get_user.php'); 
+                    require_once('composant/bus/modifier/api/get_service.php'); 
                 }
+            
             else  if($page=='supprimer_buss')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/bus/supprimer/api/get_users.php'); 
+                    require_once('composant/bus/supprimer/api/get_services.php'); 
                 }
+
             else  if($page=='supprimer_bus')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/bus/supprimer/api/get_user.php'); 
+                    require_once('composant/bus/supprimer/api/get_service.php'); 
                 }
-
+         
             else  if($page=='recuperer_buss')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/bus/recuperer/api/get_users.php'); 
+                    require_once('composant/bus/recuperer/api/get_services.php'); 
                 }
+
             else  if($page=='recuperer_bus')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/bus/recuperer/api/get_user.php'); 
+                    require_once('composant/bus/recuperer/api/get_service.php'); 
                 }
 
                  //Composant :Ituneraire
@@ -215,7 +224,7 @@
             else  if($page=='attribuer_carte')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/carte/attribuer/api/get_users.php'); 
+                    require_once('composant/carte/attribuer/api/get_services.php'); 
                 }  
             
         

@@ -56,7 +56,7 @@ $payload = json_encode($data);
             $telephone =  $agents->telephone;
             $email =  $agents->email;
             $role =  $agents->role;
-              echo"$result";
+           
                 //Intregration de l'IHM affichant la reponse positive
                 require_once('composant/agent/modifier/ihm/reponse_positive.php'); 
             }
