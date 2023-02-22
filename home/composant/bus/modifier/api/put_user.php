@@ -37,8 +37,8 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
-    $bus=json_decode($result);
-    $code =  $bus->code;
+    $buss=json_decode($result);
+    $code =  $buss->code;
     if($code ==200)
         {   
             $matricule =  $buss->matricule;
