@@ -3,15 +3,8 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-<<<<<<< HEAD
-		<a href="ui-panels.html">Utilisateur</a>
-=======
-<<<<<<< HEAD
+
 		<a href="ui-panels.html">Agent</a>
-=======
-		<a href="ui-panels.html">Utilisateur</a>
->>>>>>> a21073b2cbb0387459fdc65930121a5eebfdbf5b
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -30,17 +23,13 @@
 									
 				</div>
 								
-				<h2 style="text-align: center;">Modifier utilisateur </h2>
+				<h2 style="text-align: center;">Modifier agent </h2>
 
 			</div>
 					
 			<div class="panel-body">
 			
-<<<<<<< HEAD
-				<form method="POST" action="index.php?demande=modifier_utilisateur" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
-=======
 				<form method="POST" action="index.php?demande=modifier_agent" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
@@ -101,8 +90,6 @@
 							</div>
 					</div>
 
-<<<<<<< HEAD
-=======
 
                     <div class="form-group">		
 						<label class="col-sm-3 control-label">Role</label>			
@@ -115,7 +102,6 @@
 							</div>
 					</div>
 
->>>>>>> ba22a06127be0ca78d58cb71ec839fe519a952af
 					<div class="form-group">	
 							<div  >
                                 <span id="msg"></span>
