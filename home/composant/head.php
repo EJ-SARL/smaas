@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Developpez votre relation client gr창ce aux Campagnes SMS en RD Congo" />
 	<meta name="author" content="" />
+	
 
 	<link rel="icon" href="assets/images/hk.svg">
 
@@ -24,6 +25,9 @@
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
 
 	<script src="assets/js/nosajax.js"></script>
+
+	
+
 
 
 </head>

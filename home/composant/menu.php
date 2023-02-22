@@ -73,30 +73,29 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_client">
+							<a href="?page=ajouter_agent">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
 						
 						<li>
-							<a href="?page=modifier_clients">
+							<a href="?page=modifier_agents">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_clients">
+							<a href="?page=supprimer_agents">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_clients">
+							<a  href="?page=recuperer_agents">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
 						
 					</ul>
 				</li>
-
 											
 				<li class="has-sub">
 					<a href="forms-main.html">
@@ -107,6 +106,69 @@
 						<li>
 							<a href="?page=ajouter_itineraire">
 								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_itineraire">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_itineraire">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_itineraire">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Bus</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_bus">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_itineraire">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_itineraire">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_itineraire">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
+
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Carte</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=attribuer_carte">
+								<span class="title">Attribuer</span>
 							</a>
 						</li>
 						
@@ -173,7 +235,6 @@
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
-						
 						<li>
 							<a href="?page=modifier_clients">
 								<span class="title">Modifier</span>
@@ -189,10 +250,10 @@
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
-						
 					</ul>
 				</li>
-              
+
+				
 				<li>
 					<a href="./composant/tracking/">
 					<i class="entypo-logout right"></i>	Tracking
