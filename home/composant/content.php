@@ -241,7 +241,7 @@
     else   
         {
             //Composant2 : formuler la demande
-            require_once('composant/client/ajout/ihm/demande_creation.php'); 
+            require_once('composant/dashboard/ihm/index.php'); 
         }
       
       

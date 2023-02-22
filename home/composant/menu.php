@@ -30,10 +30,15 @@
 			
 			
 
-<ul id="main-menu" class="main-menu">
-				<!-- add class "multiple-expanded" to allow multiple submenus to open -->
-				<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
-								
+			<ul id="main-menu" class="main-menu">
+			
+			<li class="active opened active ">
+					<a href="index.html">
+						<i class="entypo-gauge"></i>
+						<span class="title">Centre de contrôle</span>
+					</a>
+				</li>
+
 				<li class="has-sub">
 					<a href="forms-main.html">
 						<i class="entypo-users"></i>
