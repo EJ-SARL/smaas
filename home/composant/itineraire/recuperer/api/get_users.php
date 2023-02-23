@@ -1,6 +1,6 @@
 <?php
 
-    $url = 'http://api.eliajimmy.net/client/';
+    $url = 'http://api.eliajimmy.net/itineraire/';
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -15,7 +15,7 @@
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $clients= $obj->client;
+    $itineraire= $obj->itineraire;
 
     $code =  $obj->code;
 
@@ -23,7 +23,7 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/client/recuperer/ihm/afficher_users.php'); 
+            require_once('composant/itineraire/recuperer/ihm/afficher_users.php'); 
         }
 
 

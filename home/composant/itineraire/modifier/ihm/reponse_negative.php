@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Client</a>
+		<a href="ui-panels.html">Itineraire</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -38,10 +38,10 @@
 						<h2 style="text-align: center;">Modifier un itineraire </h2>
 		
 					</div>
-							
+							  
 					<div class="panel-body">
 								
-						<form method="POST" action="index.php?demande=modifier_client" role="form" class="form-horizontal form-groups-bordered">
+						<form method="POST" action="index.php?demande=modifier_itineraire" role="form" class="form-horizontal form-groups-bordered">
 
 						<input type="HIDDEN" name="id" value=<?php echo $id;?> >
 							<div class="form-group">		
@@ -60,7 +60,7 @@
 									<div class="col-sm-5">
 										<div class="input-group">
 											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="itineraire" value=<?php echo $itineraire;?> class="form-control">
+											<input type="text" name="itineraire" value=<?php echo $itineraires;?> class="form-control">
 											<span class="input-group-addon"><i class="entypo-user"></i></span>
 										</div>
 									</div>

@@ -1,6 +1,6 @@
 <?php
 $id=$_POST['id'];
-$url = 'http://api.eliajimmy.net/client/'.$id;
+$url = 'http://api.eliajimmy.net/itineraire/'.$id;
 
 //Recuperer les variables POST
 $ligne=$_POST['ligne'];
@@ -17,7 +17,7 @@ $data = array(
     'ligne' => $ligne,
     'itineraire' => $itineraire,
     
-    'mode'=> $mode
+    
 
 );
 
@@ -37,14 +37,17 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
-    $client=json_decode($result);
-    $code =  $client->code;
+echo $result;
+
+    
+    $itineraire=json_decode($result);
+    $code =  $itineraire->code;
     if($code ==200)
         {   
-            $ligne =  $client->ligne;
-            $itineraire =  $client->itineraire;
+            $ligne =  $itineraire->ligne;
+            $itineraires =  $itineraire->itineraire;
             
-            $id =  $client->id;
+            $id=  $itineraire->id;
              
             //Intregration de l'IHM affichant la reponse positive
            require_once('composant/itineraire/modifier/ihm/reponse_positive.php'); 

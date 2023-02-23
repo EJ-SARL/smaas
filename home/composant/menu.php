@@ -111,17 +111,17 @@
 						</li>
 						
 						<li>
-							<a href="?page=modifier_itineraire">
+							<a href="?page=modifier_itineraires">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_itineraire">
+							<a href="?page=supprimer_itineraires">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_itineraire">
+							<a  href="?page=recuperer_itineraires">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>

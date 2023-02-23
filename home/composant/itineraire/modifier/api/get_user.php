@@ -15,17 +15,17 @@ $ch = curl_init();
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
-    $obj = json_decode($result);                      
-    $clients= $obj->client;
+$obj = json_decode($result);                      
+$itineraire= $obj->itineraire;
 
-    $code =  $obj->code;
+$code =  $obj->code;
 
     if($code ==200)
         {   
-            $prenom=$clients[0]->ligne; 
-            $nom=$clients[0]->itineraire;
+            $ligne=$itineraire[0]->ligne; 
+            $itineraires=$itineraire[0]->itineraire;   
            
-            $id=$clients[0]->id;
+            $id=$itineraire[0]->id;
             //Intregration de l'IHM affichant la reponse positive
             require_once('composant/itineraire/modifier/ihm/form_user.php'); 
         }

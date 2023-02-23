@@ -14,12 +14,14 @@
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
+    
+    
     $obj = json_decode($result);                      
-    $clients= $obj->client;
+    $itineraire= $obj->itineraire;
 
     $code =  $obj->code;
 
-    if($code ==200)
+    if($code ==200)  
         {   
              
             //Integration de l'IHM affichant la reponse positive
