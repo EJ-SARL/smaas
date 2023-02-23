@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Bus</a>
+		<a href="ui-panels.html">Appareil</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>
@@ -15,7 +15,7 @@
 <div class="row">
 
 <div class="col-md-12">
-	<div class="alert alert-danger"><strong>Voulez-vous supprimer le bus ci-dessous ? .</strong> <a href='?page=supprimer_bus'><button type='button' class='btn btn-blue'>NON</button></a> <a href='?demande=supprimer_agent&id=<?php echo $id;?>'><button type='button' class='btn btn-red'>OUI</button></a></div>
+	<div class="alert alert-danger"><strong>Voulez-vous supprimer l'appareil ci-dessous ? .</strong> <a href='?page=supprimer_appareil'><button type='button' class='btn btn-blue'>NON</button></a> <a href='?demande=supprimer_appareil&id=<?php echo $id;?>'><button type='button' class='btn btn-red'>OUI</button></a></div>
 </div>
 
 </div>
@@ -30,10 +30,12 @@
 					<thead>
 						<tr>
 						 	<th width='15%'>ID</th>
-							<th>Matricule</th>
-							<th>Marque</th>
-							<th>Total de place</th>
-							
+							<th>Nom</th>
+							<th>Categorie</th>
+							<th>Numero de serie</th>
+							<th>Place</th>
+							<th>Quantite</th>
+
 						</tr>
 					</thead>
 					<tbody>
@@ -41,7 +43,7 @@
 							<?php
 							
 								
-										echo"<tr><td>". $id." </td><td>". $matricule ." </td><td> " . $marque ." </td><td> ". $total_place." </td><tr>";
+										echo"<tr><td>". $id." </td><td>". $nom ." </td><td> " . $categorie ." </td><td> ". $numero_serie." </td><td> ". $place." </td><td> ". $quantite." </td><tr>";
 								
 							?>
 						</tr>				

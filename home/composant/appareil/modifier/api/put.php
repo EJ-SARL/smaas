@@ -1,22 +1,26 @@
 <?php
 $id=$_POST['id'];
 
-$url = 'http://api.eliajimmy.net/bus/'.$id;
+$url = 'http://api.eliajimmy.net/appareil/'.$id;
 
 
 //Recuperer les variables POST
-$matricule=$_POST['matricule'];
-$marque=$_POST['marque'];
-$total_place=$_POST['total_place'];
+$nom=$_POST['nom'];
+$categorie=$_POST['categorie'];
+$numero_serie=$_POST['numero_serie'];
+$place=$_POST['place'];
+$quantite=$_POST['quantite'];
 
 $ch = curl_init();
 
 // Setup request to send json via POST
 $data = array(
     
-    'matricule' => $matricule,
-    'marque' => $marque,
-    'total_place' => $total_place,
+    'nom' => $nom,
+    'cotegorie' => $categorie,
+    'numero_serie' => $numero_serie,
+    'place' => $place,
+    'quantite' => $quantite,
 	
 
 );
@@ -37,22 +41,23 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
-    $buss=json_decode($result);
-    $code =  $buss->code;
+    $appareils=json_decode($result);
+    $code =  $appareils->code;
     if($code ==200)
         {   
-            $matricule =  $buss->matricule;
-            $marque =  $buss->marque;
-            $total_place =  $buss->total_place;
-           
+            $nom =  $appareils->nom;
+            $categorie =  $appareils->categorie;
+            $numero_serie =  $appareils->numero_serie;
+            $place =  $appareils->place;
+            $quantite =  $appareils->quantite;
                 //Intregration de l'IHM affichant la reponse positive
-                require_once('composant/bus/modifier/ihm/reponse_positive.php'); 
+                require_once('composant/appareil/modifier/ihm/reponse_positive.php'); 
             }
         else    
             {
                 
                 //Intregration de l'IHM affichant la reponse negative
-                require_once('composant/bus/modifier/ihm/reponse_negative.php');   
+                require_once('composant/appareil/modifier/ihm/reponse_negative.php');   
             }
     
     

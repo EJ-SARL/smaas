@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="ui-panels.html">Bus</a>
+		<a href="ui-panels.html">Appareil</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -17,7 +17,7 @@
 
 <div class="col-md-12">
 
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification d'agent ci-dessous est executée avec success.</div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification d'appareil ci-dessous est executée avec success.</div>
 </div>
 
 </div>
@@ -32,10 +32,11 @@
 					<thead>
 						<tr>
 						 	<th width='15%'>ID</th>
-							<th>Matricule</th>
-							<th>Marque</th>
-							<th>Total place</th>
-							
+							<th>Nom</th>
+							<th>Categorie</th>
+							<th>Numero de serie</th>
+							<th>Place</th>
+							<th>Quantite</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -43,7 +44,7 @@
 							<?php
 							
 								
-										echo"<tr><td>". $id." </td><td>". $matricule ." </td><td> " . $marque ." </td><td> ". $total_place." </td><tr>";
+										echo"<tr><td>". $id." </td><td>". $nom ." </td><td> " . $categorie ." </td><td> ". $numero_serie." </td><td> ". $place." </td><td> ". $quantite." </td><tr>";
 								
 							?>
 						</tr>				

@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Bus</a>
+		<a href="ui-panels.html">Appareil</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>
@@ -42,9 +42,11 @@
 				<tr>
 				    <TH></TH>
 					
-					<th>Matricule</th>
-					<th>Marque</th>
-					<th>Total place</th>
+					<th>Nom</th>
+					<th>Categorie</th>
+					<th>Numero de serie</th>
+					<th>Place</th>
+					<th>Quantite</th>
 					<th>Action</th>
 	
 				</tr>
@@ -53,16 +55,18 @@
 				
 			<?php
 							
-			for($i=0; $i < count($buss); $i++)
+			for($i=0; $i < count($appareils); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
 				
-					<td>". $buss[$i]->matricule ."</td>
-					<td > " . $buss[$i]->marque ."</td>
-					<td >". $buss[$i]->total_place."</td>
-					<td style='text-align:center;'><a href='?page=supprimer_bus&id=". $buss[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
+					<td>". $appareils[$i]->nom ."</td>
+					<td > " . $appareils[$i]->categorie ."</td>
+					<td >". $appareils[$i]->numero_serie."</td>
+					<td >". $appareils[$i]->place."</td>
+					<td >". $appareils[$i]->quantite."</td>
+					<td style='text-align:center;'><a href='?page=supprimer_appareil&id=". $appareils[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
 					
 					
 		
