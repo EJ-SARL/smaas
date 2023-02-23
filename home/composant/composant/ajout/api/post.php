@@ -1,13 +1,12 @@
 
 <?php
 //URI
-$url = 'http://api.eliajimmy.net/appareil/';
+$url = 'http://api.eliajimmy.net/composant/';
 
 //Recuperer les variables POST
 $nom=$_POST['nom'];
 $categorie=$_POST['categorie'];
 $numero_serie=$_POST['numero_serie'];
-$place=$_POST['place'];
 $quantite=$_POST['quantite'];
 $ch = curl_init();
 
@@ -17,7 +16,6 @@ $data = array(
     'nom' => $nom,
     'categorie' => $categorie,
     'numero_serie' => $numero_serie,
-    'place' => $place,
     'quantite' => $quantite,
    
     
@@ -41,24 +39,23 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
-    $appareil=json_decode($result);
-    $code =  $appareil->code;
+    $composant=json_decode($result);
+    $code =  $composant->code;
     if($code ==201)
         {   
-            $nom =  $appareil->nom;
-            $categorie =  $appareil->categorie;
-            $numero_serie =  $appareil->numero_serie;
-            $place =  $appareil->place;
-            $quantite =  $appareil->quantite;
+            $nom =  $composant->nom;
+            $categorie =  $composant->categorie;
+            $numero_serie =  $composant->numero_serie;
+            $quantite =  $composant->quantite;
             $id =  $appareil->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/appareil/ajout/ihm/reponse_positive.php'); 
+            require_once('composant/composant/ajout/ihm/reponse_positive.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/appareil/ajout/ihm/reponse_negative.php');   
+            require_once('composant/composant/ajout/ihm/reponse_negative.php');   
         }
 
 

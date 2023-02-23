@@ -197,6 +197,39 @@
 				</li>
 
 
+
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Composant</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_composant">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_composants">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_composants">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_composants">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
+
 				<li class="has-sub">
 					<a href="forms-main.html">
 						<i class="entypo-users"></i>

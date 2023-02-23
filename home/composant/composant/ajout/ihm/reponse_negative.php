@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Appareil</a>
+		<a href="ui-panels.html">Composant</a>
 	</li>
 	<li class="active">
 		<strong>Ajouter</strong>
@@ -35,13 +35,13 @@
 											
 						</div>
 										
-						<h2 style="text-align: center;">Ajouter un Appareil </h2>
+						<h2 style="text-align: center;">Ajouter un composant </h2>
 		
 					</div>
 							
 					<div class="panel-body">
 								
-						<form method="POST" action="index.php?demande=ajouter_appareil" role="form" class="form-horizontal form-groups-bordered">
+						<form method="POST" action="index.php?demande=ajouter_composant" role="form" class="form-horizontal form-groups-bordered">
 					
 							<div class="form-group">		
 								<label class="col-sm-3 control-label">Nom</label>
@@ -76,17 +76,7 @@
 									</div>
 							</div>
 
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Place</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="place" value=<?php echo $place;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-										</div>
-									</div>
-							</div>
-
+						
 
 							<div class="form-group">		
 								<label class="col-sm-3 control-label">Quantite</label>			

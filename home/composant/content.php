@@ -75,6 +75,27 @@
                      //Composant1 : recuperer la reponse de la demande
                     require_once('composant/appareil/supprimer/api/delete.php'); 
                 }
+
+
+
+
+                else if($demande=='ajouter_composant')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/composant/ajout/api/post.php'); 
+                }
+            else if($demande=='modifier_composant')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/composant/modifier/api/put.php'); 
+                }
+            else if($demande=='supprimer_composant')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/composant/supprimer/api/delete.php'); 
+                }
        
 
 
@@ -287,6 +308,48 @@
                 }
 
 
+
+
+                else if($page=='ajouter_composant')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/composantl/ajout/ihm/demande_creation.php'); 
+                }
+            else  if($page=='modifier_composants')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/composant/modifier/api/get_services.php'); 
+                }
+
+             else  if($page=='modifier_composant')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/composant/modifier/api/get_service.php'); 
+                }
+      
+            else  if($page=='supprimer_composants')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/composant/supprimer/api/get_services.php'); 
+                }
+
+            else  if($page=='supprimer_composant')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/composant/supprimer/api/get_service.php'); 
+                }
+           
+            else  if($page=='recuperer_composants')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/composant/recuperer/api/get_services.php'); 
+                }
+            
+            else  if($page=='recuperer_composant')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/composant/recuperer/api/get_service.php'); 
+                }
 
 
                  //Composant :Ituneraire
