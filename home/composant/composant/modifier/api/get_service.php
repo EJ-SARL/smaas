@@ -3,7 +3,7 @@
 $id=$_GET['id'];
 
 //URI
-$url = 'http://api.eliajimmy.net/appareil/'.$id;
+$url = 'http://api.eliajimmy.net/composant/'.$id;
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -16,21 +16,20 @@ $ch = curl_init();
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $appareils= $obj->appareil;
+    $composants= $obj->composant;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $nom=$appareils[0]->nom; 
-            $categorie=$appareils[0]->categorie;
-            $numero_serie=$appareils[0]->numero_serie;
-            $place=$appareils[0]->place;
-            $quantite=$appareils[0]->quantite;
-            $id=$appareils[0]->id;
+            $nom=$composants[0]->nom; 
+            $categorie=$composants[0]->categorie;
+            $numero_serie=$composants[0]->numero_serie;
+            $quantite=$composants[0]->quantite;
+            $id=$composants[0]->id;
             //Intregration de l'IHM affichant la reponse positive
 
-            require_once('composant/appareil/modifier/ihm/form_user.php'); 
+            require_once('composant/composant/modifier/ihm/form_user.php'); 
         }
 
 

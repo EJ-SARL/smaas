@@ -47,7 +47,7 @@ $payload = json_encode($data);
             $categorie =  $composant->categorie;
             $numero_serie =  $composant->numero_serie;
             $quantite =  $composant->quantite;
-            $id =  $appareil->id;
+            $id =  $composant->id;
             //Intregration de l'IHM affichant la reponse positive
             require_once('composant/composant/ajout/ihm/reponse_positive.php'); 
         }

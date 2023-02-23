@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Appareil</a>
+		<a href="ui-panels.html">Composant</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>
@@ -13,7 +13,7 @@
 
 
 <div class="col-md-12">
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de suppression de bus est executée avec success.</div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de suppression de composant est executée avec success.</div>
 </div>
 
 						
@@ -45,7 +45,6 @@
 					<th>Nom</th>
 					<th>Categorie</th>
 					<th>Numero de serie</th>
-					<th>Place</th>
 					<th>Quantite</th>
 					<th>Action</th>
 	
@@ -55,18 +54,17 @@
 				
 			<?php
 							
-			for($i=0; $i < count($appareils); $i++)
+			for($i=0; $i < count($composants); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
 				
-					<td>". $appareils[$i]->nom ."</td>
-					<td > " . $appareils[$i]->categorie ."</td>
-					<td >". $appareils[$i]->numero_serie."</td>
-					<td >". $appareils[$i]->place."</td>
-					<td >". $appareils[$i]->quantite."</td>
-					<td style='text-align:center;'><a href='?page=supprimer_appareil&id=". $appareils[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
+					<td>". $composants[$i]->nom ."</td>
+					<td > " . $composants[$i]->categorie ."</td>
+					<td >". $composants[$i]->numero_serie."</td>
+					<td >". $composants[$i]->quantite."</td>
+					<td style='text-align:center;'><a href='?page=supprimer_composant&id=". $composants[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
 					
 					
 		

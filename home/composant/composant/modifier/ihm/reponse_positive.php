@@ -5,7 +5,7 @@
 	</li>
 	<li>
 
-		<a href="ui-panels.html">Appareil</a>
+		<a href="ui-panels.html">Composant</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -17,7 +17,7 @@
 
 <div class="col-md-12">
 
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification d'appareil ci-dessous est executée avec success.</div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de modification de composant ci-dessous est executée avec success.</div>
 </div>
 
 </div>
@@ -35,7 +35,6 @@
 							<th>Nom</th>
 							<th>Categorie</th>
 							<th>Numero de serie</th>
-							<th>Place</th>
 							<th>Quantite</th>
 						</tr>
 					</thead>
@@ -44,7 +43,7 @@
 							<?php
 							
 								
-										echo"<tr><td>". $id." </td><td>". $nom ." </td><td> " . $categorie ." </td><td> ". $numero_serie." </td><td> ". $place." </td><td> ". $quantite." </td><tr>";
+										echo"<tr><td>". $id." </td><td>". $nom ." </td><td> " . $categorie ." </td><td> ". $numero_serie." </td><td> ". $quantite." </td><tr>";
 								
 							?>
 						</tr>				

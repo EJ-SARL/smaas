@@ -3,7 +3,7 @@
 $id=$_GET['id'];
 
 //URI
-$url = 'http://api.eliajimmy.net/appareil/'.$id;
+$url = 'http://api.eliajimmy.net/composant/'.$id;
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -16,7 +16,7 @@ $ch = curl_init();
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $appareils= $obj->appareil;
+    $composants= $obj->composant;
 
     $code =  $obj->code;
 
@@ -24,13 +24,13 @@ $ch = curl_init();
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/appareil/supprimer/ihm/reponse_positive.php'); 
+            require_once('composant/composant/supprimer/ihm/reponse_positive.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/appareil/supprimer/ihm/reponse_negative.php');   
+            require_once('composant/composant/supprimer/ihm/reponse_negative.php');   
         }
 
 

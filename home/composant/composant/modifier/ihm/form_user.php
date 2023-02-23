@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="ui-panels.html">Appareil</a>
+		<a href="ui-panels.html">Composant</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -23,13 +23,13 @@
 									
 				</div>
 								
-				<h2 style="text-align: center;">Modifier appareil </h2>
+				<h2 style="text-align: center;">Modifier composant </h2>
 
 			</div>
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modifier_appareil" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modifier_composant" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
@@ -61,17 +61,6 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 									<input type="text" name="numero_serie"  value=<?php echo $numero_serie;?> class="form-control">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-								</div>
-							</div>
-					</div>
-
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Place</label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="place"  value=<?php echo $place;?> class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>

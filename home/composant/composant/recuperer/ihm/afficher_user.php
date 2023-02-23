@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Appareil</a>
+		<a href="ui-panels.html">Composant</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -30,7 +30,6 @@
 										<td>Nom :</td><td>". $nom ." </td>
 										<tr><td>Categorie : </td><td> " . $categorie ." </td>
 										<tr><td>Numero de serie :</td><td> ". $numero_serie." </td>
-										<tr><td>Place :</td><td> ". $place." </td>
 										<tr><td>Quantite :</td><td> ". $quantite." </td>
 										</tr>
 										";

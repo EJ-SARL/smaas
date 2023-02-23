@@ -313,7 +313,7 @@
                 else if($page=='ajouter_composant')
                 {
                     //Composant2 : recuperer la reponse de la demande
-                    require_once('composant/composantl/ajout/ihm/demande_creation.php'); 
+                    require_once('composant/composant/ajout/ihm/demande_creation.php'); 
                 }
             else  if($page=='modifier_composants')
                 {
