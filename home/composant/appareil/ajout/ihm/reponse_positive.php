@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Bus</a>
+		<a href="ui-panels.html">appareil</a>
 	</li>
 	<li class="active">
 		<strong>Ajouter</strong>
@@ -15,7 +15,7 @@
 <div class="row">
 
 <div class="col-md-12">
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de la création du nouveau agent ci-dessous est executée avec success.</div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de la création du nouveau appareil ci-dessous est executée avec success.</div>
 </div>
 
 </div>
@@ -30,9 +30,11 @@
 					<thead>
 						<tr>
 						 	<th width='15%'>ID</th>
-							<th>Matricule</th>
-							<th>Marque</th>
-							<th>Total place</th>
+							<th>Nom</th>
+							<th>Categorie</th>
+							<th>Numero de sirie</th>
+							<th>Place</th>
+							<th>Quantite</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -40,9 +42,11 @@
 							<?php
 								echo "
 									<td>$id</td>
-									<td>$matricule</td>
-									<td>$marque</td>
-									<td>$total_place</td>
+									<td>$nom</td>
+									<td>$categorie</td>
+									<td>$numero_serie</td>
+									<td>$place</td>
+									<td>$quantite</td>
 								";
 							?>
 						</tr>				

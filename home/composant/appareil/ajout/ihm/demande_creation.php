@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Bus</a>
+		<a href="ui-panels.html">Appareil</a>
 	</li>
 	<li class="active">
 		<strong>Ajouter</strong>
@@ -23,42 +23,64 @@
 									
 				</div>
 								
-				<h2 style="text-align: center;">Ajouter un bus </h2>
+				<h2 style="text-align: center;">Ajouter un appareil </h2>
 
 			</div>
 					
 			<div class="panel-body">
 						
-				<form method="POST" action="index.php?demande=ajouter_bus"  id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=ajouter_appareil"  id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 			
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Matricule</label>
+						<label class="col-sm-3 control-label">Nom</label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="matricule" class="form-control">
+									<input type="text" name="nom" class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Marque</label>			
+						<label class="col-sm-3 control-label">Categorie</label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="marque" class="form-control">
+									<input type="text" name="categorie" class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Total place</label>			
+						<label class="col-sm-3 control-label">Numero de serie</label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="total_place" class="form-control">
+									<input type="text" name="numero_serie" class="form-control">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Place</label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="place" class="form-control">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Quantite</label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="quantite" class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
