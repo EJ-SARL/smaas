@@ -3,7 +3,7 @@
 $id=$_GET['id'];
 
 //URI
-$url = 'http://api.eliajimmy.net/client/'.$id;
+$url = 'http://api.eliajimmy.net/itineraire/'.$id;
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -16,21 +16,21 @@ $ch = curl_init();
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $clients= $obj->client;
+    $itineraire= $obj->itineraire;
 
     $code =  $obj->code;
 
     if($code ==200)
-        {   
+        {     
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/client/supprimer/ihm/reponse_positive.php'); 
+            require_once('composant/itineraire/supprimer/ihm/reponse_positive.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/client/supprimer/ihm/reponse_negative.php');   
+            require_once('composant/itineraire/supprimer/ihm/reponse_negative.php');   
         }
 
 

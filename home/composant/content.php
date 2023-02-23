@@ -29,7 +29,21 @@
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/itineraire/ajout/api/post.php'); 
                 }
+              
+                else if($demande=='modifier_itineraire')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/itineraire/modifier/api/put_user.php'); 
+                }
         
+                else if($demande=='supprimer_itineraire')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/itineraire/supprimer/api/delete_user.php'); 
+                }
+
         }
     else if (isSet($_GET['page']))
         {
@@ -79,8 +93,44 @@
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/itineraire/ajout/ihm/demande_creation.php'); 
                 }  
-            
+                    //exemple
+
+            else  if($page=='recuperer_itineraires')
+            {
+                //Composant1 : recuperer la reponse de la demande
+                require_once('composant/itineraire/recuperer/api/get_users.php'); 
+            }
+        else  if($page=='recuperer_itineraire')
+            {
+                //Composant1 : recuperer la reponse de la demande
+                require_once('composant/itineraire/recuperer/api/get_user.php'); 
+            }
         
+            //composant1: Modifier_Itineraire
+
+            else  if($page=='modifier_itineraires')
+            {
+                //Composant1 : recuperer la reponse de la demande
+                require_once('composant/itineraire/modifier/api/get_users.php'); 
+            }
+        else  if($page=='modifier_itineraire')
+            {
+                //Composant1 : recuperer la reponse de la demande
+                require_once('composant/itineraire/modifier/api/get_user.php'); 
+            }
+
+            else  if($page=='supprimer_itineraires')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/itineraire/supprimer/api/get_users.php'); 
+                }
+            else  if($page=='supprimer_itineraire')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/itineraire/supprimer/api/get_user.php'); 
+                }
+
+
         }
     else   
         {

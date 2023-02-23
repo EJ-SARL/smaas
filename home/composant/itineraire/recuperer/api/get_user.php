@@ -3,7 +3,7 @@
 $id=$_GET['id'];
 
 //URI
-$url = 'http://api.eliajimmy.net/client/'.$id;
+$url = 'http://api.eliajimmy.net/itineraire/'.$id;
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -14,22 +14,21 @@ $ch = curl_init();
     $result=curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
-
+       
+    
     $obj = json_decode($result);                      
-    $clients= $obj->client;
+    $itineraire= $obj->itineraire;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $prenom=$clients[0]->prenom; 
-            $nom=$clients[0]->nom;
-            $postnom=$clients[0]->postnom;
-            $email=$clients[0]->email;
-            $telephone=$clients[0]->telephone;
-            $id=$clients[0]->id;
+            $ligne=$itineraire[0]->ligne; 
+            $itineraires=$itineraire[0]->itineraire;
+           
+            $id=$itineraire[0]->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/client/recuperer/ihm/afficher_user.php'); 
+            require_once('composant/itineraire/recuperer/ihm/afficher_user.php'); 
         }
 
 
