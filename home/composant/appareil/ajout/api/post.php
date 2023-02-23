@@ -41,7 +41,7 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
-    $bus=json_decode($result);
+    $appareil=json_decode($result);
     $code =  $appareil->code;
     if($code ==201)
         {   

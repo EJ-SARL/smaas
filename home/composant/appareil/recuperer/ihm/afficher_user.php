@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Bus</a>
+		<a href="ui-panels.html">Appareil</a>
 	</li>
 	<li class="active">
 		<strong>Recuperer</strong>
@@ -27,9 +27,11 @@
 										echo"
 										<tr>
 										
-										<td>Prenom :</td><td>". $matricule ." </td>
-										<tr><td>Nom : </td><td> " . $marque ." </td>
-										<tr><td>Postnom :</td><td> ". $total_place." </td>
+										<td>Nom :</td><td>". $nom ." </td>
+										<tr><td>Categorie : </td><td> " . $categorie ." </td>
+										<tr><td>Numero de serie :</td><td> ". $numero_serie." </td>
+										<tr><td>Place :</td><td> ". $place." </td>
+										<tr><td>Quantite :</td><td> ". $quantite." </td>
 										</tr>
 										";
 								

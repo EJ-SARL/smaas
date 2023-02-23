@@ -1,6 +1,6 @@
 <?php
 
-    $url = 'http://api.eliajimmy.net/bus/';
+    $url = 'http://api.eliajimmy.net/appareil/';
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -15,7 +15,7 @@
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $buss= $obj->bus;
+    $appareils= $obj->appareil;
 
     $code =  $obj->code;
 
@@ -23,13 +23,13 @@
         {   
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/bus/modifier/ihm/afficher_users.php'); 
+            require_once('composant/appareil/modifier/ihm/afficher_users.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/bus/modifier/ihm/reponse_negative.php');   
+            require_once('composant/appareil/modifier/ihm/reponse_negative.php');   
         }
 
 ?>

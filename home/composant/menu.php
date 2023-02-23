@@ -168,7 +168,7 @@
 				<li class="has-sub">
 					<a href="forms-main.html">
 						<i class="entypo-users"></i>
-						<span class="title">Bus</span>
+						<span class="title">Appareil</span>
 					</a>
 					<ul>
 						<li>
