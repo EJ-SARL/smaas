@@ -3,7 +3,8 @@
 	 $token=$_SESSION['token'];
 	 $prenom=$_SESSION['prenom'];
 	 $nom=$_SESSION['nom'];	
-?> 
+	
+?>  
 <!DOCTYPE html>
 <html lang="en">
 

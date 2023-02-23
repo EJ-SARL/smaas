@@ -30,10 +30,15 @@
 			
 			
 
-<ul id="main-menu" class="main-menu">
-				<!-- add class "multiple-expanded" to allow multiple submenus to open -->
-				<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
-								
+			<ul id="main-menu" class="main-menu">
+			
+			<li class="active opened active ">
+					<a href="?home">
+						<i class="entypo-gauge"></i>
+						<span class="title">Centre de contrôle</span>
+					</a>
+				</li>
+
 				<li class="has-sub">
 					<a href="forms-main.html">
 						<i class="entypo-users"></i>
@@ -73,30 +78,29 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_client">
+							<a href="?page=ajouter_agent">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
 						
 						<li>
-							<a href="?page=modifier_clients">
+							<a href="?page=modifier_agents">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_clients">
+							<a href="?page=supprimer_agents">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_clients">
+							<a  href="?page=recuperer_agents">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
 						
 					</ul>
 				</li>
-
 											
 				<li class="has-sub">
 					<a href="forms-main.html">
@@ -126,6 +130,53 @@
 							</a>
 						</li>
 						
+					</ul>
+				</li>
+
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Bus</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_bus">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_buss">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_buss">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_buss">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
+
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Carte</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=attribuer_carte">
+								<span class="title">Attribuer</span>
+							</a>
+						</li>
+												
 					</ul>
 				</li>
 
@@ -173,7 +224,6 @@
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
-						
 						<li>
 							<a href="?page=modifier_clients">
 								<span class="title">Modifier</span>
@@ -189,11 +239,15 @@
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
-						
 					</ul>
 				</li>
-              
+
 				
+				<li>
+					<a href="./composant/tracking/">
+					<i class="entypo-logout right"></i>	Tracking
+					</a>
+				</li>
 					
 				
 				<li>
