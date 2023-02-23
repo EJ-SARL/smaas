@@ -38,11 +38,9 @@
 				<tr>
 				    <TH></TH>
 					
-					<th>Prenom</th>
-					<th>Nom</th>
-					<th>Postnom</th>
-					<th>Telephone</th>
-					<th >E-mail</th>
+					<th>Ligne</th>
+					<th>Itineraire</th>
+					
 					<th>Action</th>
 	
 				</tr>
@@ -51,18 +49,16 @@
 				
 			<?php
 							
-			for($i=0; $i < count($clients); $i++)
+			for($i=0; $i < count($itineraire); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
 				
-					<td>". $clients[$i]->nom ."</td>
-					<td > " . $clients[$i]->prenom ."</td>
-					<td >". $clients[$i]->postnom."</td>
-					<td >". $clients[$i]->email."</td>
-					<td > ". $clients[$i]->telephone ." </td>
-					<td style='text-align:center;'><a href='?page=recuperer_client&id=". $clients[$i]->id ."'><button type='button' class='btn btn-green'>Recuperer</button></a></td>
+					<td>". $itineraire[$i]->ligne."</td>
+					<td > " . $itineraire[$i]->itineraire."</td>
+					
+					<td style='text-align:center;'><a href='?page=recuperer_itineraire&id=". $itineraire[$i]->id ."'><button type='button' class='btn btn-green'>Recuperer</button></a></td>
 					
 					
 		
