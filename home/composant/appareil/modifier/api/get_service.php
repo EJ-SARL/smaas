@@ -29,6 +29,7 @@ $ch = curl_init();
             $quantite=$appareils[0]->quantite;
             $id=$appareils[0]->id;
             //Intregration de l'IHM affichant la reponse positive
+
             require_once('composant/appareil/modifier/ihm/form_user.php'); 
         }
 

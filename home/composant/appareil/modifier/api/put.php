@@ -17,7 +17,7 @@ $ch = curl_init();
 $data = array(
     
     'nom' => $nom,
-    'cotegorie' => $categorie,
+    'categorie' => $categorie,
     'numero_serie' => $numero_serie,
     'place' => $place,
     'quantite' => $quantite,
