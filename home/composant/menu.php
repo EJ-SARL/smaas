@@ -188,7 +188,7 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_client">
+							<a href="?page=ajouter_arret">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>

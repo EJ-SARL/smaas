@@ -99,6 +99,13 @@
                   require_once('composant/carte/attribuer/api/put.php');
                 
                 }
+
+                else if($demande=='ajouter_arret')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                  require_once('composant/arret/ajouter/api/put.php');
+                
+                }
         }
     else if (isSet($_GET['page']))
         {
@@ -279,7 +286,11 @@
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/itineraire/supprimer/api/get_user.php'); 
                 }
-
+                else  if($page=='ajouter_arret')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/arret/ajouter/api/get_services.php'); 
+                }  
 
         }
     else   
