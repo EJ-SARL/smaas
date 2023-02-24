@@ -4,7 +4,7 @@
 	</li>
 	<li>
 
-		<a href="ui-panels.html">Appareil</a>
+		<a href="ui-panels.html">Titre</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -29,64 +29,54 @@
 					
 			<div class="panel-body">
 			
-				<form method="POST" action="index.php?demande=modifier_appareil" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+				<form method="POST" action="index.php?demande=modifier_titre" id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 						
 					<input type="HIDDEN" name="id" value=<?php echo $_GET['id'];?>>	
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Nom</label>
+						<label class="col-sm-3 control-label">Forfait</label>
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="nom" value=<?php echo $nom;?>  class="form-control">
+									<input type="text" name="forfait" value=<?php echo $forfait;?>  class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Categorie</label>			
+						<label class="col-sm-3 control-label">Periode</label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="categorie"   value=<?php echo $categorie;?> class="form-control">
+									<input type="text" name="periode"   value=<?php echo $periode;?> class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Numero de serie</label>			
+						<label class="col-sm-3 control-label">Prix</label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="numero_serie"  value=<?php echo $numero_serie;?> class="form-control">
+									<input type="text" name="prix"  value=<?php echo $prix;?> class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>
 
 					<div class="form-group">		
-						<label class="col-sm-3 control-label">Place</label>			
+						<label class="col-sm-3 control-label">Zone</label>			
 							<div class="col-sm-5">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="place"  value=<?php echo $place;?> class="form-control">
+									<input type="text" name="zone"  value=<?php echo $zone;?> class="form-control">
 									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
 					</div>
 
-					<div class="form-group">		
-						<label class="col-sm-3 control-label">Quantite</label>			
-							<div class="col-sm-5">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-									<input type="text" name="quantite"  value=<?php echo $quantite;?> class="form-control">
-									<span class="input-group-addon"><i class="entypo-user"></i></span>
-								</div>
-							</div>
-					</div>
 
 					<div class="form-group">
 						<div class="col-sm-offset-3 col-sm-5">

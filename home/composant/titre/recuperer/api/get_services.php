@@ -1,6 +1,6 @@
 <?php
 
-    $url = 'http://api.eliajimmy.net/appareil/';
+    $url = 'http://api.eliajimmy.net/titre/';
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -15,15 +15,17 @@
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $appareils= $obj->appareil;
+    $titres= $obj->titre;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
+          
              
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/appareil/recuperer/ihm/afficher_users.php'); 
+            require_once('composant/titre/recuperer/ihm/afficher_users.php'); 
+           
         }
 
 

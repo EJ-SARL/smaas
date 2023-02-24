@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">appareil</a>
+		<a href="ui-panels.html">Titre</a>
 	</li>
 	<li class="active">
 		<strong>Supprimer</strong>
@@ -38,11 +38,10 @@
 				<tr>
 				    <TH></TH>
 					
-					<th>Nom</th>
-					<th>Categorie</th>
-					<th>Numero de serie</th>
-					<th>Place</th>
-					<th>Quantite</th>
+					<th>Forfait</th>
+					<th>Periode</th>
+					<th>Prix</th>
+					<th>Zone</th>
 					<th>Action</th>
 	
 				</tr>
@@ -51,18 +50,17 @@
 				
 			<?php
 							
-			for($i=0; $i < count($appareils); $i++)
+			for($i=0; $i < count($titres); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
 				
-					<td>". $appareils[$i]->nom ."</td>
-					<td > " . $appareils[$i]->categorie ."</td>
-					<td >". $appareils[$i]->numero_serie."</td>
-					<td >". $appareils[$i]->place."</td>
-					<td >". $appareils[$i]->quantite."</td>
-					<td style='text-align:center;'><a href='?page=supprimer_appareil&id=". $appareils[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
+					<td>". $titres[$i]->forfait ."</td>
+					<td > " . $titres[$i]->periode ."</td>
+					<td >". $titres[$i]->prix."</td>
+					<td >". $titres[$i]->zone."</td>
+					<td style='text-align:center;'><a href='?page=supprimer_titre&id=". $titres[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
 					
 					
 		
