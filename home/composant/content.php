@@ -98,6 +98,24 @@
                 }
        
 
+                
+                else if($demande=='ajouter_titre')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/titre/ajout/api/post.php'); 
+                }
+            else if($demande=='modifier_titre')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/titre/modifier/api/put.php'); 
+                }
+            else if($demande=='supprimer_titre')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/titre/supprimer/api/delete.php'); 
+                }
 
 
             //Composant4 : recuperer la reponse de la demande Itineraire
@@ -350,6 +368,51 @@
                     //Composant2 : recuperer la reponse de la demande
                     require_once('composant/composant/recuperer/api/get_service.php'); 
                 }
+
+
+
+
+                else if($page=='ajouter_titre')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/titre/ajout/ihm/demande_creation.php'); 
+                }
+            else  if($page=='modifier_titres')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/titre/modifier/api/get_services.php'); 
+                }
+
+             else  if($page=='modifier_titre')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/titre/modifier/api/get_service.php'); 
+                }
+      
+            else  if($page=='supprimer_titres')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/titre/supprimer/api/get_services.php'); 
+                }
+
+            else  if($page=='supprimer_titre')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/titre/supprimer/api/get_service.php'); 
+                }
+           
+            else  if($page=='recuperer_titres')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/titre/recuperer/api/get_services.php'); 
+                }
+            
+            else  if($page=='recuperer_titre')
+                {
+                    //Composant2 : recuperer la reponse de la demande
+                    require_once('composant/titre/recuperer/api/get_service.php'); 
+                }
+
 
 
                  //Composant :Ituneraire

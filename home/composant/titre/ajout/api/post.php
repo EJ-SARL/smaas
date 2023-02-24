@@ -1,28 +1,23 @@
 
 <?php
 //URI
-$url = 'http://api.eliajimmy.net/appareil/';
+$url = 'http://api.eliajimmy.net/titre/';
 
 //Recuperer les variables POST
-$nom=$_POST['nom'];
-$categorie=$_POST['categorie'];
-$numero_serie=$_POST['numero_serie'];
-$place=$_POST['place'];
-$quantite=$_POST['quantite'];
+$forfait=$_POST['forfait'];
+$periode=$_POST['periode'];
+$prix=$_POST['prix'];
+$zone=$_POST['zone'];
 $ch = curl_init();
 
 // Setup request to send json via POST
 $data = array(
     
-    'nom' => $nom,
-    'categorie' => $categorie,
-    'numero_serie' => $numero_serie,
-    'place' => $place,
-    'quantite' => $quantite,
+    'forfait' => $forfait,
+    'periode' => $periode,
+    'prix' => $prix,
+    'zone' => $zone,
    
-    
-    
-
 );
 
 //Transform row int Json objet
@@ -41,24 +36,23 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
-    $appareil=json_decode($result);
-    $code =  $appareil->code;
+    $titre=json_decode($result);
+    $code =  $titre->code;
     if($code ==201)
         {   
-            $nom =  $appareil->nom;
-            $categorie =  $appareil->categorie;
-            $numero_serie =  $appareil->numero_serie;
-            $place =  $appareil->place;
-            $quantite =  $appareil->quantite;
-            $id =  $appareil->id;
+            $forfait =  $titre->forfait ;
+            $periode =  $titre->periode;
+            $prix =  $titre->prix;
+            $zone =  $titre->zone;
+            $id =  $titre->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/appareil/ajout/ihm/reponse_positive.php'); 
+            require_once('composant/titre/ajout/ihm/reponse_positive.php'); 
         }
     else    
         {
             
             //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/appareil/ajout/ihm/reponse_negative.php');   
+            require_once('composant/titre/ajout/ihm/reponse_negative.php');   
         }
 
 

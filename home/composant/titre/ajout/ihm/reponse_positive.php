@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">appareil</a>
+		<a href="ui-panels.html">Titre</a>
 	</li>
 	<li class="active">
 		<strong>Ajouter</strong>
@@ -15,7 +15,7 @@
 <div class="row">
 
 <div class="col-md-12">
-	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de la création du nouveau appareil ci-dessous est executée avec success.</div>
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de la création du nouveau titre de transport ci-dessous est executée avec success.</div>
 </div>
 
 </div>
@@ -30,11 +30,10 @@
 					<thead>
 						<tr>
 						 	<th width='15%'>ID</th>
-							<th>Nom</th>
-							<th>Categorie</th>
-							<th>Numero de sirie</th>
-							<th>Place</th>
-							<th>Quantite</th>
+							<th>Forfait</th>
+							<th>Periode</th>
+							<th>Prix</th>
+							<th>Zone</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -42,11 +41,10 @@
 							<?php
 								echo "
 									<td>$id</td>
-									<td>$nom</td>
-									<td>$categorie</td>
-									<td>$numero_serie</td>
-									<td>$place</td>
-									<td>$quantite</td>
+									<td>$forfait</td>
+									<td>$periode</td>
+									<td>$prix</td>
+									<td>$zone</td>
 								";
 							?>
 						</tr>				

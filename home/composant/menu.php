@@ -285,22 +285,22 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_client">
+							<a href="?page=ajouter_titre">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=modifier_clients">
+							<a href="?page=modifier_titres">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_clients">
+							<a href="?page=supprimer_titres">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_clients">
+							<a  href="?page=recuperer_titres">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
