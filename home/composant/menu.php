@@ -168,6 +168,71 @@
 				<li class="has-sub">
 					<a href="forms-main.html">
 						<i class="entypo-users"></i>
+						<span class="title">Appareil</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_appareil">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_appareils">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_appareils">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_appareils">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
+
+
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
+						<span class="title">Composant</span>
+					</a>
+					<ul>
+						<li>
+							<a href="?page=ajouter_composant">
+								<span class="title">Ajouter</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="?page=modifier_composants">
+								<span class="title">Modifier</span>
+							</a>
+						</li>
+						<li>
+							<a href="?page=supprimer_composants">
+								<span class="title">Supprimer</span>
+							</a>
+						</li>
+						<li>
+							<a  href="?page=recuperer_composants">
+								<span class="title">Recuperer</span>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
+
+				<li class="has-sub">
+					<a href="forms-main.html">
+						<i class="entypo-users"></i>
 						<span class="title">Carte</span>
 					</a>
 					<ul>
@@ -220,22 +285,22 @@
 					</a>
 					<ul>
 						<li>
-							<a href="?page=ajouter_client">
+							<a href="?page=ajouter_titre">
 								<span class="title">Ajouter</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=modifier_clients">
+							<a href="?page=modifier_titres">
 								<span class="title">Modifier</span>
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_clients">
+							<a href="?page=supprimer_titres">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_clients">
+							<a  href="?page=recuperer_titres">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
