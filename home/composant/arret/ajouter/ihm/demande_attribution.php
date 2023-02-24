@@ -82,7 +82,7 @@
 					<div class="form-group">
 						<div class="col-sm-offset-3 col-sm-5">
 							<button type="submit" onclick="validate()" class="btn btn-success btn-block btn-login">
-					<i class="entypo-right-open-mini">Attribuer</i>
+					<i class="entypo-right-open-mini">Ajouter</i>
 					</div>
 					</div>
 							
@@ -98,6 +98,7 @@
 
 <!--Recuperer l'identifiant de la nouvelle carte!-->
 <script>
+	/*
 	function loadDoc() 
 		{
 			var xhttp = new XMLHttpRequest();
@@ -122,4 +123,5 @@
   			xhttp.send();
 		}
 setInterval(loadDoc, 1000);
+*/
 </script>

@@ -1,17 +1,19 @@
 <?php
-$carte=$_POST['carte'];
-$url = 'http://api.eliajimmy.net/carte/'.$carte;
+//$carte=$_POST['carte'];
+$url = 'http://api.eliajimmy.net/arret/'
 
 //Recuperer les variables POST
 
-$client=$_POST['client'];
+$itineraire =$_POST['itineraire'];
+
+$nom=$_POST['nom'];
 
 $ch = curl_init();
 
 // Setup request to send json via POST
 $data = array(   
-    'carte' => $carte,
-    'client' => $client
+    'nom' => $nom,
+    'itineraire' => $itineraire
 );
 
 //Transform row int Json objet
@@ -30,19 +32,18 @@ $payload = json_encode($data);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 	
-    $client=json_decode($result);
-    $code =  $client->code;
+    echo  $result;
+    $itineraire=json_decode($result);
+    $code = $itineraire->code;
     if($code ==200)
         {   
-            $prenom =  $client->prenom;
-            $nom =  $client->nom;
-            $postnom =  $client->postnom;
-            $telephone =  $client->telephone;
-            $email =  $client->email;
-            $id =  $client->id;
+            $itineraires =  $itineraire->itineraire;
+            $nom =  $itineraire->nom;
+            
+            $id =  $itineraire->id;
              
             //Intregration de l'IHM affichant la reponse positive
-           require_once('composant/carte/attribuer/ihm/reponse_positive.php'); 
+           require_once('composant/arret/ajouter/ihm/reponse_positive.php'); 
         }
     /*else    
         {

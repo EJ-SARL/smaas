@@ -103,7 +103,7 @@
                 else if($demande=='ajouter_arret')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                  require_once('composant/arret/ajouter/api/put.php');
+                  require_once('composant/arret/ajouter/api/post.php');
                 
                 }
         }
