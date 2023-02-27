@@ -3,7 +3,7 @@
 $id=$_GET['id'];
 
 //URI
-$url = 'http://api.eliajimmy.net/client/'.$id;
+$url = 'http://api.eliajimmy.net/arret/'.$id;
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -16,20 +16,17 @@ $ch = curl_init();
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $clients= $obj->client;
+    $arrets= $obj->arret;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
-            $prenom=$clients[0]->prenom; 
-            $nom=$clients[0]->nom;
-            $postnom=$clients[0]->postnom;
-            $email=$clients[0]->email;
-            $telephone=$clients[0]->telephone;
-            $id=$clients[0]->id;
+            $itineraire_id=$arrets[0]->itineraire_id; 
+            $nom=$arrets[0]->nom;
+            $id=$arrets[0]->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/client/supprimer/ihm/form_user.php'); 
+            require_once('composant/arret/supprimer/ihm/form_user.php'); 
         }
 
 

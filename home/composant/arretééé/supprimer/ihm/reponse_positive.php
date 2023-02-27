@@ -4,12 +4,20 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Arret</a>
+		<a href="ui-panels.html">Client</a>
 	</li>
 	<li class="active">
-		<strong>Recuperer</strong>
+		<strong>Supprimer</strong>
 	</li>
-</ol>	
+</ol>
+
+
+<div class="col-md-12">
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de suppression du client est executée avec success.</div>
+</div>
+
+						
+		
 		<br />
 		
 		<script type="text/javascript">
@@ -33,8 +41,12 @@
 			<thead>
 				<tr>
 				    <TH></TH>
-					<th>Itineraire</th>
+					
+					<th>Prenom</th>
 					<th>Nom</th>
+					<th>Postnom</th>
+					<th>Telephone</th>
+					<th >E-mail</th>
 					<th>Action</th>
 	
 				</tr>
@@ -43,14 +55,21 @@
 				
 			<?php
 							
-			for($i=0; $i < count($arrets); $i++)
+			for($i=0; $i < count($clients); $i++)
 				{         
 					echo"                         
-               	<tr class='odd gradeX'>
-					<td>$i</td>
-					<td>". $arrets[$i]->itineraire_id ."</td>
-					<td > " . $arrets[$i]->nom ."</td>
-					<td style='text-align:center;'><a href='?page=recuperer_arret&id=". $arrets[$i]->id ."'><button type='button' class='btn btn-green'>Recuperer</button></a></td>
+               			 <tr class='odd gradeX'>
+								<td>$i</td>
+				
+					<td>". $clients[$i]->nom ."</td>
+					<td > " . $clients[$i]->prenom ."</td>
+					<td >". $clients[$i]->postnom."</td>
+					<td >". $clients[$i]->email."</td>
+					<td > ". $clients[$i]->telephone ." </td>
+					<td style='text-align:center;'><a href='?page=supprimer_client&id=". $clients[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
+					
+					
+		
 				</tr>";
 						         
 				}
@@ -62,6 +81,14 @@
 	
 
 		
+	
+			
+		
+	
+
+
+
+
 
 	<!-- Imported styles on this page -->
 	<link rel="stylesheet" href="assets/js/datatables/datatables.css">

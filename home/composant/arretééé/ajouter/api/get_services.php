@@ -1,6 +1,6 @@
 <?php
 
-    $url = 'http://api.eliajimmy.net/arret/';
+    $url = 'http://api.eliajimmy.net/itineraire/';
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -15,14 +15,15 @@
     curl_close($ch);
 
     $obj = json_decode($result);                      
-    $arrets= $obj->arret;
+    $itineraire= $obj->itineraire;
 
     $code =  $obj->code;
 
     if($code ==200)
         {   
+           
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/arret/recuperer/ihm/afficher_users.php'); 
+            require_once('composant/arret/ajouter/ihm/demande_attribution.php'); 
         }
 
 

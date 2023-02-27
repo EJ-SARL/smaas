@@ -264,12 +264,12 @@
 							</a>
 						</li>
 						<li>
-							<a href="?page=supprimer_clients">
+							<a href="?page=supprimer_arrets">
 								<span class="title">Supprimer</span>
 							</a>
 						</li>
 						<li>
-							<a  href="?page=recuperer_clients">
+							<a  href="?page=recuperer_arrets">
 								<span class="title">Recuperer</span>
 							</a>
 						</li>
