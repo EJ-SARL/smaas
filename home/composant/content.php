@@ -494,7 +494,7 @@
                 else  if($page=='recuperer_arrets')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/arret/recuperer/api/get_get_ressources.php'); 
+                    require_once('composant/arret/recuperer/api/get_ressources.php'); 
                 }  
 
                 else  if($page=='recuperer_arret')
