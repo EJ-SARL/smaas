@@ -21,7 +21,7 @@
 
 			<!--Composant3 : contenu du body (formulaire,...)!-->
 			<?php
-				require_once('composant/content.php')
+				require_once('composant/main.php')
 			?> 			
 
 			</div>
