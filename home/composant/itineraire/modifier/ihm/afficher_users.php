@@ -40,7 +40,7 @@
 					<th>Ligne</th>
 					<th>Itineraire</th>
 					
-	
+					<th>Action</th>
 				</tr>
 			</thead>
 			<tbody>

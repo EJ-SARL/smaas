@@ -171,6 +171,14 @@
                     require_once('composant/arret/supprimer/api/delete.php'); 
                 }
 
+
+                else if($demande=='modifier_arret')
+                {
+                    
+                     //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/arret/modifier/api/put_user.php'); 
+                }
+
         }
     else if (isSet($_GET['page']))
         {
@@ -514,7 +522,18 @@
                 {
                     //Composant1 : recuperer la reponse de la demande
                     require_once('composant/arret/supprimer/api/get_ressource.php'); 
-                }  
+                } 
+                
+                else  if($page=='modifier_arrets')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/arret/modifier/api/get_ressources.php'); 
+                }
+            else  if($page=='modifier_arret')
+                {
+                    //Composant1 : recuperer la reponse de la demande
+                    require_once('composant/arret/modifier/api/get_ressource.php'); 
+                }
 
         }
     else   

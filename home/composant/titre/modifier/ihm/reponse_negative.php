@@ -91,16 +91,6 @@
 									</div>
 							</div>
 
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Quantite</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="quantite" value=<?php echo $quantite;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-										</div>
-									</div>
-							</div>
 							
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-5">

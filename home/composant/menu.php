@@ -259,7 +259,7 @@
 						</li>
 						
 						<li>
-							<a href="?page=modifier_clients">
+							<a href="?page=modifier_arrets">
 								<span class="title">Modifier</span>
 							</a>
 						</li>

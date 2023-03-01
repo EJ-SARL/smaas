@@ -4,14 +4,13 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Itineraire</a>
+		<a href="ui-panels.html">Arret</a>
 	</li>
 	<li class="active">
-		<strong>Recuperer</strong>
+		<strong>Modifier</strong>
 	</li>
 </ol>
-
-
+     
 								
 		
 		<br />
@@ -37,37 +36,34 @@
 			<thead>
 				<tr>
 				    <TH></TH>
-					
-					<th>Ligne</th>
 					<th>Itineraire</th>
-					
+					<th>Nom</th>
 					<th>Action</th>
-	
 				</tr>
 			</thead>
 			<tbody>
 				
 			<?php
 							
-			for($i=0; $i < count($itineraire); $i++)
+			for($i=0; $i < count($arrets); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
 				
-					<td>". $itineraire[$i]->ligne."</td>
-					<td > " . $itineraire[$i]->itineraire."</td>
+					<td>". $arrets[$i]->itineraire_id ."</td>
+					<td > " . $arrets[$i]->nom ."</td>
 					
-					<td style='text-align:center;'><a href='?page=recuperer_itineraire&id=". $itineraire[$i]->id ."'><button type='button' class='btn btn-green'>Recuperer</button></a></td>
+					<td style='text-align:center;'><a href='?page=modifier_arret&id=". $arrets[$i]->id ."'><button type='button' class='btn btn-blue'>Modifier</button></a></td>
 					
 					
-		
+		   
 				</tr>";
 						         
 				}
 				?>
 		</table>
-		
+		  
 		<br />
 		
 	
