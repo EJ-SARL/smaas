@@ -4,16 +4,12 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Client</a>
+		<a href="ui-panels.html">Arret</a>
 	</li>
 	<li class="active">
-		<strong>Supprimer</strong>
+		<strong>Recuperer</strong>
 	</li>
-</ol>
-
-
-								
-		
+</ol>	
 		<br />
 		
 		<script type="text/javascript">
@@ -37,7 +33,6 @@
 			<thead>
 				<tr>
 				    <TH></TH>
-					
 					<th>Itineraire</th>
 					<th>Nom</th>
 					<th>Action</th>
@@ -51,15 +46,11 @@
 			for($i=0; $i < count($arrets); $i++)
 				{         
 					echo"                         
-               			 <tr class='odd gradeX'>
-								<td>$i</td>
-				
+               	<tr class='odd gradeX'>
+					<td>$i</td>
 					<td>". $arrets[$i]->itineraire_id ."</td>
 					<td > " . $arrets[$i]->nom ."</td>
-					<td style='text-align:center;'><a href='?page=supprimer_arret&id=". $arrets[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
-					
-					
-		
+					<td style='text-align:center;'><a href='?page=recuperer_arret&id=". $arrets[$i]->id ."'><button type='button' class='btn btn-green'>Recuperer</button></a></td>
 				</tr>";
 						         
 				}
@@ -71,14 +62,6 @@
 	
 
 		
-	
-			
-		
-	
-
-
-
-
 
 	<!-- Imported styles on this page -->
 	<link rel="stylesheet" href="assets/js/datatables/datatables.css">

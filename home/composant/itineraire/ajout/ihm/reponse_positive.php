@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Client</a>
+		<a href="ui-panels.html">Itineraire</a>
 	</li>
 	<li class="active">
 		<strong>Ajouter</strong>

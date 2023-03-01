@@ -7,12 +7,16 @@
 		<a href="ui-panels.html">Client</a>
 	</li>
 	<li class="active">
-		<strong>Recuperer</strong>
+		<strong>Supprimer</strong>
 	</li>
 </ol>
 
 
-								
+<div class="col-md-12">
+	<div class="alert alert-success"><strong>Success !!!</strong> Votre demande de suppression du client est executée avec success.</div>
+</div>
+
+						
 		
 		<br />
 		
@@ -62,7 +66,7 @@
 					<td >". $clients[$i]->postnom."</td>
 					<td >". $clients[$i]->email."</td>
 					<td > ". $clients[$i]->telephone ." </td>
-					<td style='text-align:center;'><a href='?page=recuperer_client&id=". $clients[$i]->id ."'><button type='button' class='btn btn-green'>Recuperer</button></a></td>
+					<td style='text-align:center;'><a href='?page=supprimer_client&id=". $clients[$i]->id ."'><button type='button' class='btn btn-red'>Supprimer</button></a></td>
 					
 					
 		

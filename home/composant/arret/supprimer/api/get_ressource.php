@@ -7,7 +7,7 @@ $url = 'http://api.eliajimmy.net/arret/'.$id;
 
 $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
     
     // Return response instead of outputting
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -22,15 +22,11 @@ $ch = curl_init();
 
     if($code ==200)
         {   
-             
+            $itineraire_id=$arrets[0]->itineraire_id; 
+            $nom=$arrets[0]->nom;
+            $id=$arrets[0]->id;
             //Intregration de l'IHM affichant la reponse positive
-            require_once('composant/arret/supprimer/ihm/reponse_positive.php'); 
-        }
-    else    
-        {
-            
-            //Intregration de l'IHM affichant la reponse negative
-            require_once('composant/arret/supprimer/ihm/reponse_negative.php');   
+            require_once('composant/arret/supprimer/ihm/form_user.php'); 
         }
 
 
