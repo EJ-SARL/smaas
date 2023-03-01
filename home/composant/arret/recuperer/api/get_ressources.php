@@ -14,12 +14,14 @@
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
+    
+    
     $obj = json_decode($result);                      
     $arrets= $obj->arret;
 
     $code =  $obj->code;
 
-    if($code ==200)
+    if($code ==200)  
         {   
             //Intregration de l'IHM affichant la reponse positive
             require_once('composant/arret/recuperer/ihm/afficher_users.php'); 
