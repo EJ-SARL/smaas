@@ -1,7 +1,7 @@
 
 <?php
 //URI
-$url = 'http://api.eliajimmy.net/standard/';
+$url = 'http://api.eliajimmy.net/ressource/';
 
 //Recuperer les variables POST
 $variable=$_POST['variable'];
@@ -35,7 +35,7 @@ $code =  $reponse->code;
     if($code ==201)
         {   
             $variable =  $reponse->variable;
-                      
+            //tes
             //Intregration de l'IHM affichant la reponse positive
             require_once('composant/standard/ajout/ihm/reponse_positive.php'); 
         }
