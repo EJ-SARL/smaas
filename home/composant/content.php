@@ -439,7 +439,7 @@
             else  if($page=='attribuer_carte')
                 {
                     //Composant1 : recuperer la reponse de la demande
-                    require_once('composant/carte/attribuer/api/get_services.php'); 
+                    require_once('composant/carte/attribuer/api/get_ressources.php'); 
                 }  
                     //exemple
 
