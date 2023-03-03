@@ -118,7 +118,7 @@
 								}
 						}
  				 };
-  			xhttp.open("GET", "composant/carte/attribuer/api/get_carte.php", true);
+  			xhttp.open("GET", "composant/carte/attribuer/api/get_ressource.php", true);
   			xhttp.send();
 		}
 setInterval(loadDoc, 1000);
