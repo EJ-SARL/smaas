@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Client</a>
+		<a href="ui-panels.html">Arret</a>
 	</li>
 	<li class="active">
 		<strong>Ajouter</strong>
@@ -35,43 +35,70 @@
 											
 						</div>
 										
-						<h2 style="text-align: center;">Ajouter l'itineraire </h2>
+						<h2 style="text-align: center;">Ajouter l'arret </h2>
 		
 					</div>
 							
 					<div class="panel-body">
 								
-					<form method="POST" action="index.php?demande=ajouter_itineraire"  id="theForm"  role="form" class="form-horizontal form-groups-bordered">
+					<form method="POST" action="index.php?demande=ajouter_arret"  id="theForm"  role="form" class="form-horizontal form-groups-bordered">
 			
-			<div class="form-group">		
-				<label class="col-sm-3 control-label">Ligne</label>
-					<div class="col-sm-5">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="entypo-user"></i></span>
-							<input type="text" name="ligne" class="form-control">
-							<span class="input-group-addon"><i class="entypo-user"></i></span>
-						</div>
-					</div>
-			</div>
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Itineraire</label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select name="itineraire" id="id"  class="form-control">
+										<option value="">--Selectionner un itineraire--</option>
+										<?php
+											for($i=0; $i < count($itineraire); $i++)
+												{         
+													echo"  
+															<option value=". $itineraire[$i]->id ."> " . $itineraire[$i]->id ."  " . $itineraire[$i]->ligne ."    " . $itineraire[$i]->itineraire."</option>                       
+															
+													";
+																
+												}
+										?>
+										
+									</select>
+									
+									
 
-			<div class="form-group">		
-				<label class="col-sm-3 control-label">Itineraire</label>			
-					<div class="col-sm-5">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="entypo-user"></i></span>
-							<input type="text" name="itineraire" class="form-control">
-							<span class="input-group-addon"><i class="entypo-user"></i></span>
-						</div>
-					</div>
-			</div>
-
-			
-							
-							<div class="form-group">
-								<div class="col-sm-offset-3 col-sm-5">
-									<button type="submit" class="btn btn-success">Ajouter</button>
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
 								</div>
 							</div>
+					</div>
+
+					<div class="form-group">		
+						<label class="col-sm-3 control-label">Nom</label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<input type="text" name="nom" id="idcarte"  class="form-control">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+								</div>
+							</div>
+					</div>
+
+					
+
+					
+
+
+					
+
+					
+					
+
+					<div class="form-group">
+						<div class="col-sm-offset-3 col-sm-5">
+							<button type="submit" onclick="validate()" class="btn btn-success btn-block btn-login">
+					<i class="entypo-right-open-mini">Ajouter</i>
+					</div>
+					</div>
+							
+				</form>
 									
 						</form>
 								

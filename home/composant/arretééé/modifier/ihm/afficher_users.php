@@ -4,10 +4,10 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Itineraire</a>
+		<a href="ui-panels.html">Client</a>
 	</li>
 	<li class="active">
-		<strong>Recuperer</strong>
+		<strong>Modifier</strong>
 	</li>
 </ol>
 
@@ -38,9 +38,11 @@
 				<tr>
 				    <TH></TH>
 					
-					<th>Ligne</th>
-					<th>Itineraire</th>
-					
+					<th>Prenom</th>
+					<th>Nom</th>
+					<th>Postnom</th>
+					<th>Telephone</th>
+					<th >E-mail</th>
 					<th>Action</th>
 	
 				</tr>
@@ -49,16 +51,18 @@
 				
 			<?php
 							
-			for($i=0; $i < count($itineraire); $i++)
+			for($i=0; $i < count($clients); $i++)
 				{         
 					echo"                         
                			 <tr class='odd gradeX'>
 								<td>$i</td>
 				
-					<td>". $itineraire[$i]->ligne."</td>
-					<td > " . $itineraire[$i]->itineraire."</td>
-					
-					<td style='text-align:center;'><a href='?page=recuperer_itineraire&id=". $itineraire[$i]->id ."'><button type='button' class='btn btn-green'>Recuperer</button></a></td>
+					<td>". $clients[$i]->nom ."</td>
+					<td > " . $clients[$i]->prenom ."</td>
+					<td >". $clients[$i]->postnom."</td>
+					<td >". $clients[$i]->email."</td>
+					<td > ". $clients[$i]->telephone ." </td>
+					<td style='text-align:center;'><a href='?page=modifier_client&id=". $clients[$i]->id ."'><button type='button' class='btn btn-blue'>Modifier</button></a></td>
 					
 					
 		

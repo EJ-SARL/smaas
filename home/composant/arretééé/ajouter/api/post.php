@@ -1,10 +1,11 @@
 <?php
-//$id=$_POST['carte'];
-$url = 'http://api.eliajimmy.net/arret/';
+//$carte=$_POST['carte'];
+$url = 'http://api.eliajimmy.net/arret/'
 
 //Recuperer les variables POST
 
-$itineraire_id=$_POST['itineraire'];
+$itineraire_id =$_POST['itineraire'];
+
 $nom=$_POST['nom'];
 
 $ch = curl_init();
@@ -30,15 +31,17 @@ $payload = json_encode($data);
     $result=curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
-
-    echo  $result;  
+	
+    echo  $result;
     $itineraire=json_decode($result);
-    
     $code = $itineraire->code;
     if($code ==200)
         {   
+            $itineraire_id =  $itineraire->itineraire__id;
+            $nom =  $itineraire->nom;
             
-                          
+            $id =  $itineraire->id;
+             
             //Intregration de l'IHM affichant la reponse positive
            require_once('composant/arret/ajouter/ihm/reponse_positive.php'); 
         }

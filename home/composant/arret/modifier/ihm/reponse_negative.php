@@ -4,7 +4,7 @@
 		<a href="index.html"><i class="fa-home"></i>Home</a>
 	</li>
 	<li>
-		<a href="ui-panels.html">Client</a>
+		<a href="ui-panels.html">Arret</a>
 	</li>
 	<li class="active">
 		<strong>Modifier</strong>
@@ -35,25 +35,42 @@
 											
 						</div>
 										
-						<h2 style="text-align: center;">Modifier un client </h2>
+						<h2 style="text-align: center;">Modifier un arret </h2>
 		
 					</div>
-							
+							  
 					<div class="panel-body">
 								
-						<form method="POST" action="index.php?demande=modifier_client" role="form" class="form-horizontal form-groups-bordered">
+						<form method="POST" action="index.php?demande=modifier_arret" role="form" class="form-horizontal form-groups-bordered">
 
 						<input type="HIDDEN" name="id" value=<?php echo $id;?> >
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Prenom</label>
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="prenom" value=<?php echo $prenom;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-										</div>
-									</div>
+						<div class="form-group">		
+						<label class="col-sm-3 control-label">Itineraire</label>
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select name="itineraire" id="id"  class="form-control">
+										<option value="">--Selectionner un itineraire--</option>
+										<?php
+											for($i=0; $i < count($itineraire); $i++)
+												{         
+													echo"  
+															<option value=". $itineraire[$i]->id ."> " . $itineraire[$i]->id ."  " . $itineraire[$i]->ligne ."    " . $itineraire[$i]->itineraire."</option>                       
+															
+													";
+																
+												}
+										?>
+										
+									</select>
+									
+									
+
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+								</div>
 							</div>
+					</div>
+
 		
 							<div class="form-group">		
 								<label class="col-sm-3 control-label">Nom</label>			
@@ -66,60 +83,6 @@
 									</div>
 							</div>
 		
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Post-nom</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-											<input type="text" name="postnom" value=<?php echo $postnom;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-user"></i></span>
-										</div>
-									</div>
-							</div>
-		
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">E-mail</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-mail"></i></span>
-											<input type="text" name="email" value=<?php echo $email;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-mail"></i></span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Telephone</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon"><i class="entypo-phone"></i></span>
-											<input type="text" name="telephone" value=<?php echo $telephone;?> class="form-control">
-											<span class="input-group-addon"><i class="entypo-phone"></i></span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Mot de passe</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon">**</span>
-											<input type="password" name="password"   class="form-control">
-											<span class="input-group-addon">**</span>
-										</div>
-									</div>
-							</div>
-
-							<div class="form-group">		
-								<label class="col-sm-3 control-label">Confirmer</label>			
-									<div class="col-sm-5">
-										<div class="input-group">
-											<span class="input-group-addon">**</span>
-											<input type="password" name="confirmPassword" class="form-control">
-											<span class="input-group-addon">**</span>
-										</div>
-									</div>
-							</div>
 							
 							<div class="form-group">
 								<div class="col-sm-offset-3 col-sm-5">

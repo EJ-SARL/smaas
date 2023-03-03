@@ -17,7 +17,7 @@
                        
                         $demande=$_GET['demande'];
                         
-                        if($demande=='creation')
+                        if($demande=='creation')  
                             {
                                 //Composant1 : recuperer la reponse de la demande
                                 require_once('composant/inscription/api/post.php'); 

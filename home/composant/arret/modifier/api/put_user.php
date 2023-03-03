@@ -1,11 +1,11 @@
-
 <?php
-//URI
-$url = 'http://api.eliajimmy.net/arret/';
+$id=$_POST['id'];
+$url = 'http://api.eliajimmy.net/arret/'.$id;
 
 //Recuperer les variables POST
 $itineraire_id=$_POST['itineraire'];
 $nom=$_POST['nom'];
+
 
 
 $ch = curl_init();
@@ -14,8 +14,9 @@ $ch = curl_init();
 $data = array(
     
     'itineraire_id' => $itineraire_id,
-    'nom' => $nom
-   
+    'nom' => $nom,
+    
+    
 
 );
 
@@ -24,7 +25,7 @@ $payload = json_encode($data);
 
     curl_setopt($ch, CURLOPT_URL, $url);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
-    //curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");
 
 	// Set the content type to application/json
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
@@ -34,24 +35,26 @@ $payload = json_encode($data);
     $result=curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
-	
+
+    
     $arret=json_decode($result);
     $code =  $arret->code;
-    if($code ==201)
+    if($code ==200)
         {   
             $itineraire_id =  $arret->itineraire_id;
             $nom =  $arret->nom;
-            $id =  $arret->id;
+            
+            $id=  $arret->id;
              
-              //Intregration de l'IHM affichant la reponse positive
-              require_once('composant/arret/ajouter/ihm/reponse_positive.php'); 
-            }
-        else    
-            {
-                
-                //Intregration de l'IHM affichant la reponse negative
-                require_once('composant/arret/modifier/ihm/reponse_negative.php');   
-            }
-    
+            //Intregration de l'IHM affichant la reponse positive
+           require_once('composant/arret/modifier/ihm/reponse_positive.php'); 
+        }
+    else    
+        {
+            
+            //Intregration de l'IHM affichant la reponse negative
+            require_once('composant/arret/modifier/ihm/reponse_negative.php');   
+        }
+
 
 ?>
