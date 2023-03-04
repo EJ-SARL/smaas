@@ -56,6 +56,28 @@
 					</div>
 
 					<div class="form-group">		
+						<label class="col-sm-3 control-label">Role</label>			
+							<div class="col-sm-5">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+									<select name="role" id="id"  class="form-control">
+										<option value="">--Selectionner le role--</option>
+										 
+										<option value="MONEY">Money</option>                       
+										 
+										<option value="TRANSPORT">Transport</option>                       
+										 
+										<option value="OFFICE">Bureau</option>                       
+										
+												
+									</select>
+									
+									<span class="input-group-addon"><i class="entypo-user"></i></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="form-group">		
 						<label class="col-sm-3 control-label">Numero de serie</label>			
 							<div class="col-sm-5">
 								<div class="input-group">

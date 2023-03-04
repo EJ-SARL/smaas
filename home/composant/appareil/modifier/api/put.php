@@ -9,6 +9,7 @@ $nom=$_POST['nom'];
 $categorie=$_POST['categorie'];
 $numero_serie=$_POST['numero_serie'];
 $place=$_POST['place'];
+$role=$_POST['role'];
 $quantite=$_POST['quantite'];
 
 $ch = curl_init();
@@ -21,6 +22,7 @@ $data = array(
     'numero_serie' => $numero_serie,
     'place' => $place,
     'quantite' => $quantite,
+    'role' => $role,
 	
 
 );
